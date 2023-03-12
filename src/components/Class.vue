@@ -58,7 +58,8 @@ export default {
                     "Développement": {
                         "image": 2,
                         "thèmes fiche": [['Développement', "pdf/seconde/developpements/Developpement.pdf"]],
-                        "thèmes ligne": [["Double distributivité", "seconde/developpement/double_distributivite/Double distributivite.html"], ["Identité remarquables", "#"]]
+                        "thèmes ligne": [["Double distributivité", "seconde/developpement/double_distributivite/Double distributivite.html"], 
+                        ["Identité remarquables", "seconde/developpement/identites_remarquables/Identitesremarquables.html"]]
                     },
                     'Equations de droites': {
                         "image": 3,

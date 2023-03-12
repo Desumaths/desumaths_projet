@@ -200,10 +200,9 @@ function genererExercice(){
 
   enonce.innerHTML = `Développer : $\\boldsymbol{\\left(${signe1} ~ ${a}x ${signe2} ${b}\\right) \\left(${signe3} ~ ${c}x ${signe4} ${d}\\right)}$`;
   solution.innerHTML = `Solution : $${repsig1} ~ ${coef1}x^2 ${repsig2} ${coef2}x  ${repsig3} ${coef3}$`;
-  correctiond.innerHTML = `$\\left(${signe1} ~ ${a}x ${signe2} ${b}\\right) \\left(${signe3} ~ ${c}x ${signe4} ${d}\\right) =$ <br> $${signe1} ~ ${a}x ~ \\times ${parg1} ${pm_3} ~ ${c}x ${pard1} 
-  ${pm1} ${a}x ~ \\times ${parg2} ${pm4} ${d} ${pard2} ${signe2} ${b} ~ \\times ${parg1} ${pm_3} ${c}x ${pard1} ${signe2} ${b}~\\times ${parg2} ${pm4} ${d} ${pard2}$
-  = <br> $ ${repsig1} ~ ${coef1}x^2 ${reps2} ${ad}x ${reps3} ${bc}x ${repsig3} ${coef3}$ 
-  $=$ <br> $ ${repsig1} ~ ${coef1}x^2 ${repsig2} ${coef2}x  ${repsig3} ${coef3}$`;
+  correctiond.innerHTML = `$\\begin{array}{rcl} \\left(${signe1} ~ ${a}x ${signe2} ${b}\\right) \\left(${signe3} ~ ${c}x ${signe4} ${d}\\right) & = & ${signe1} ~ ${a}x ~ \\times ${parg1} ${pm_3} ~ ${c}x ${pard1} ${pm1} ${a}x ~ \\times ${parg2} ${pm4} ${d} ${pard2} ${signe2} ${b} ~ \\times ${parg1} ${pm_3} ${c}x ${pard1} ${signe2} ${b}~\\times ${parg2} ${pm4} ${d} ${pard2} \\\\
+  & = & ${repsig1} ~ ${coef1}x^2 ${reps2} ${ad}x ${reps3} ${bc}x ${repsig3} ${coef3} \\\\
+  & = & ${repsig1} ~ ${coef1}x^2 ${repsig2} ${coef2}x  ${repsig3} ${coef3} \\end{array}$`;
 }
 
 window.addEventListener('load', function(){
