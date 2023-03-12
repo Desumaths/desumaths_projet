@@ -125,7 +125,47 @@ export default {
                         ["Racines", "pdf/seconde/nombresCalculs/Racines.pdf"],
                         ],
                         "thèmes ligne": [["#", "#"]],
-                    }
+                    },
+                    'Pourcentages': {
+                        'image': 10,
+                        "thèmes fiche": [["Pourcentages(fiche 1)", "pdf/seconde/pourcentages/Pourcentages_fiche_1.pdf"],
+                        ["Pourcentages(fiche 2)", "pdf/seconde/pourcentages/Pourcentages_fiche_2.pdf"]
+                        ],
+                        "thèmes ligne": [["#", "#"]]
+                    },
+                    'Probabilités': {
+                        "image": 11,
+                        "thèmes fiche": [["Diagrammes de Venn", "pdf/seconde/probabilites/Diagrammes_de_Venn.pdf"],
+                        ["Probabilités(divers)", "pdf/seconde/probabilites/Probabilites_(divers).pdf"],
+                        ["Probabilités et arbres", "pdf/seconde/probabilites/Probabilites_et_arbres.pdf"],
+                        ["Probabilités et tableaux", "pdf/seconde/probabilites/Probabilites_et_tableaux.pdf"]
+                        ],
+                        "thèmes ligne": [["#", "#"]]
+                    },
+                    'Statistiques': {
+                        "image": 12,
+                        "thèmes fiche": [["Statistiques", "pdf/seconde/statistiques/Statistiques.pdf"]],
+                        "thèmes ligne": [["#", "#"]]
+                    },
+                    'Systèmes': {
+                        "image": 13,
+                        "thèmes fiche": [["Systèmes(calculs)", "pdf/seconde/systemes/Systemes_(calculs).pdf"],
+                        ["Systèmes(graphiques)", "pdf/seconde/systemes/Systemes_(graphiques).pdf"]
+                        ],
+                        "thèmes ligne": [["#", "#"]]
+                    },
+                    'Valeur absolue': {
+                        "image": 13,
+                        "thèmes fiche": [["Valeur absolue(équations|inéquations)", "pdf/seconde/valeurAbsolue/Valeur_absolue(équations_inéquations).pdf"]],
+                        "thèmes ligne": [["#", "#"]]
+                    },
+                    'Vecteurs': {
+                        "image": 1,
+                        "thèmes fiche": [["Constructions de vecteurs", "pdf/seconde/vecteurs/Constructions_de_vecteurs.pdf"],
+                        ["Vecteurs(calculs de base)", "pdf/seconde/vecteurs/Vecteurs_(calculs_de_base).pdf"],
+                        ["Vecteurs(coordonnées)", "pdf/seconde/vecteurs/Vecteurs_(coordonnees).pdf"]],
+                        "thèmes ligne": [["#", "#"]]
+                    },
                 }
             }
         }
