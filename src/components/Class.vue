@@ -153,7 +153,7 @@ export default {
                         "thèmes fiche": [["Systèmes(calculs)", "pdf/seconde/systemes/Systemes_(calculs).pdf"],
                         ["Systèmes(graphiques)", "pdf/seconde/systemes/Systemes_(graphiques).pdf"]
                         ],
-                        "thèmes ligne": [["#", "#"]]
+                        "thèmes ligne": [["Systèmes(faciles)", "seconde/systemes/systemes_faciles/Systemes(tombe_juste).html"]]
                     },
                     'Valeur absolue': {
                         "image": 13,
