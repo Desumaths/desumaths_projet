@@ -97,7 +97,7 @@ export default {
                         ["Tableaux de variations(équations|inéquations)", "pdf/seconde/fonctions/Tableaux_de_variations_equations_et_inequations.pdf"],
 
                         ],
-                        "thèmes ligne": [["#", "#"]]
+                        "thèmes ligne": [["Images et antécédents", "seconde/fonctions/antecedents_images/ImagesAntecedents.html"]]
                     },
                     'Inéquations': {
                         'image': 7,

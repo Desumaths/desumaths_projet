@@ -1,3 +1,7 @@
+body{
+  user-select: none;
+}
+
 #solution {
     color: crimson;
     font-size: 1.5vw !important;
