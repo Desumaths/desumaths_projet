@@ -38,6 +38,7 @@ span {
 
 body {
   background-image: linear-gradient(to right, rgba(19.3, 108.4, 160.2, 1), rgba(19.3, 108.4, 160.2, 0.7), rgba(19.3, 108.4, 160.2, 0.3));
+  user-select: none;
 
 }
 
