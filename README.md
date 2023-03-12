@@ -1,5 +1,5 @@
 # Desum@th : Le site de Christophe
-<img src='https://github.com/DarkSATHI/desusite/blob/main/public/sidebar-image.png?raw=true' width="300" />
+<img src='/workspaces/desumath/public/sidebar-image.png' width="300" />
 
 Ce site, comme son nom l'indique est un site (optimisé pour le navigateur Chrome) uniquement dédié à l'entraînement en mathématiques.
 
@@ -24,4 +24,6 @@ Tout ce qui fonctionne sur ce site (et le site lui-même) ce sont son aide et se
 Tout ce qui fonctionne mal ou pas est dû à mon incompétence ou au fait que je n'ai pas réussi à mettre en œuvre ce qu'il m'a expliqué.
 
 Encore un immense merci pour ces explications et cette patience.
+
+<img src='/workspaces/desumath/public/sidebar-image.jpg' width="300" />
 
