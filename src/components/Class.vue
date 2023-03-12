@@ -97,7 +97,17 @@ export default {
                                          
                                         ],
                         "thèmes ligne": [["#", "#"]]
-                    }
+                    },
+                    'Inéquations':{
+                        'image': 7,
+                        "thèmes fiche": [["Inéquation(divers)", "pdf/seconde/inequations/Inequations_(divers).pdf"],
+                                        ["Inéquations(tableaux de signes de base)", "pdf/seconde/inequations/Inequations_(tableaux_de_signes_de_base).pdf"],
+                                        ["Inéquations(tableaux de signes divers)", "pdf/seconde/inequations/Inequations_(tableaux_de_signes_divers).pdf"],
+                                        ["Inéquations simples(intersections | réunions)", "pdf/seconde/inequations/Inequations_simples_intersections_reunions.pdf"],
+                                        ["Systèmes d'inéquations", "pdf/seconde/inequations/Systemes_d_inequations.pdf"],
+                                        ],
+                        "thèmes ligne": [["#", "#"]]
+                    },
                 }
 
             }
