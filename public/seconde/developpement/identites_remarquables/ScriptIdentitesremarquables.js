@@ -60,9 +60,9 @@ var solutions = document.getElementById('solutions');
 let solution = document.getElementById('solution');
 
 
-let listenonces = [`Développer : $\\left(${signe1} ~ ${a}x + ${b}\\right)^2$`,
-    `Développer : $\\left(${signe1} ~ ${a}x - ${b}\\right)^2$`,
-    `Développer : $\\left(${a}x + ${b}\\right) \\left(${a}x - ${b}\\right)$`
+let listenonces = [`Développer : $\\boldsymbol{\\left(${signe1} ~ ${a}x + ${b}\\right)^2}$`,
+    `Développer : $\\boldsymbol{\\left(${signe1} ~ ${a}x - ${b}\\right)^2}$`,
+    `Développer : $\\boldsymbol{\\left(${a}x + ${b}\\right) \\left(${a}x - ${b}\\right)}$`
 ]
 
 let listeSolutions = [`Solution : $${acarré}x^2 ${sig1} ${ab2}x + ${bcarré}$`,
