@@ -1,4 +1,4 @@
-<template>    
+<template>
     <div id="carouselClass" class="carousel slide">
         <div class="carousel-inner">
             <div v-for="theme, key, index in themes[classe]" :key="index" :class="['carousel-item', index ? '' : 'active']">
@@ -25,7 +25,7 @@ import CardTheme from './CardTheme.vue'
 
 export default {
     name: 'Classe-module',
-    components: { CardTheme},
+    components: { CardTheme },
     data() {
         return {
             accordion_class: "accordion-collapse collapse",
@@ -44,7 +44,7 @@ export default {
                 this.accordion_class = 'accordion-collapse collapse recoller'
                 this.collapsed_prop = 'collapsed recoller'
             }
-            this.recoller = (this.recoller + 1)%2
+            this.recoller = (this.recoller + 1) % 2
         }
     },
     props: {
@@ -68,7 +68,7 @@ export default {
                     'Equations': {
                         "image": 4,
                         "thèmes fiche": [["Equations", "pdf/seconde/equations/Equations_diverses.pdf"],
-                            ["Equations de degré 2", "pdf/seconde/equations/Equations_de_degre_2.pdf"]
+                        ["Equations de degré 2", "pdf/seconde/equations/Equations_de_degre_2.pdf"]
                         ],
                         "thèmes ligne": [["Equations avec factorisation", "#"],
                         ["Equations produits", "#"],
@@ -76,40 +76,57 @@ export default {
                         ["Equations de degré 1", "#"],
                         ["Equations de degré 2", "#"]
                         ]
-                    },'Factorisation':{
-                        "image" : 5,
+                    }, 'Factorisation': {
+                        "image": 5,
                         "thèmes fiche": [["Factorisation", "pdf/seconde/factorisation/Factorisation.pdf"]],
                         "thèmes ligne": [["#", "#"]]
                     },
-                    'Fonction':{
-                        "image" : 6,
+                    'Fonction': {
+                        "image": 6,
                         "thèmes fiche": [["Images antécédents", "pdf/seconde/fonctions/Images_antecedents_equations_inequations_graphiques.pdf"],
-                                         ["Hyperboles", "pdf/seconde/fonctions/Hyperboles_et_questions.pdf"],
-                                         ["Paraboles", "pdf/seconde/fonctions/Paraboles_et_questions.pdf"],
-                                         ["Parité(graphique)", "pdf/seconde/fonctions/Parite_(aspect_graphique).pdf"],
-                                         ["Parité(calculs)", "pdf/seconde/fonctions/Parite_(par_calculs).pdf"],
-                                         ["Sens de variations de fonctions(calculs)","pdf/seconde/fonctions/Sens_de_variations_de_fonctions_(par_calculs).pdf"],
-                                         ["Variations de fonctions(calculs)", "pdf/seconde/fonctions/Variations_de_fonctions_(par_calculs).pdf"],
-                                         ["Tableaux de variations(questions)", ["pdf/seconde/fonctions/Tableaux_de_variations_et_questions.pdf"]],
-                                         ["Tableaux de valeurs de courbes", "pdf/seconde/fonctions/Tableaux_de_valeurs_courbes_et_questions.pdf"],
-                                         ["Tableaux de variations(graphiques)", "pdf/seconde/fonctions/Tableaux_de_variations_(avec_graphiques).pdf"],
-                                         ["Tableaux de variations(équations|inéquations)", "pdf/seconde/fonctions/Tableaux_de_variations_equations_et_inequations.pdf"],
-                                         
-                                        ],
+                        ["Hyperboles", "pdf/seconde/fonctions/Hyperboles_et_questions.pdf"],
+                        ["Paraboles", "pdf/seconde/fonctions/Paraboles_et_questions.pdf"],
+                        ["Parité(graphique)", "pdf/seconde/fonctions/Parite_(aspect_graphique).pdf"],
+                        ["Parité(calculs)", "pdf/seconde/fonctions/Parite_(par_calculs).pdf"],
+                        ["Sens de variations de fonctions(calculs)", "pdf/seconde/fonctions/Sens_de_variations_de_fonctions_(par_calculs).pdf"],
+                        ["Variations de fonctions(calculs)", "pdf/seconde/fonctions/Variations_de_fonctions_(par_calculs).pdf"],
+                        ["Tableaux de variations(questions)", ["pdf/seconde/fonctions/Tableaux_de_variations_et_questions.pdf"]],
+                        ["Tableaux de valeurs de courbes", "pdf/seconde/fonctions/Tableaux_de_valeurs_courbes_et_questions.pdf"],
+                        ["Tableaux de variations(graphiques)", "pdf/seconde/fonctions/Tableaux_de_variations_(avec_graphiques).pdf"],
+                        ["Tableaux de variations(équations|inéquations)", "pdf/seconde/fonctions/Tableaux_de_variations_equations_et_inequations.pdf"],
+
+                        ],
                         "thèmes ligne": [["#", "#"]]
                     },
-                    'Inéquations':{
+                    'Inéquations': {
                         'image': 7,
                         "thèmes fiche": [["Inéquation(divers)", "pdf/seconde/inequations/Inequations_(divers).pdf"],
-                                        ["Inéquations(tableaux de signes de base)", "pdf/seconde/inequations/Inequations_(tableaux_de_signes_de_base).pdf"],
-                                        ["Inéquations(tableaux de signes divers)", "pdf/seconde/inequations/Inequations_(tableaux_de_signes_divers).pdf"],
-                                        ["Inéquations simples(intersections | réunions)", "pdf/seconde/inequations/Inequations_simples_intersections_reunions.pdf"],
-                                        ["Systèmes d'inéquations", "pdf/seconde/inequations/Systemes_d_inequations.pdf"],
-                                        ],
+                        ["Inéquations(tableaux de signes de base)", "pdf/seconde/inequations/Inequations_(tableaux_de_signes_de_base).pdf"],
+                        ["Inéquations(tableaux de signes divers)", "pdf/seconde/inequations/Inequations_(tableaux_de_signes_divers).pdf"],
+                        ["Inéquations simples(intersections | réunions)", "pdf/seconde/inequations/Inequations_simples_intersections_reunions.pdf"],
+                        ["Systèmes d'inéquations", "pdf/seconde/inequations/Systemes_d_inequations.pdf"],
+                        ],
                         "thèmes ligne": [["#", "#"]]
                     },
+                    'Milieu et longueur': {
+                        'image': 8,
+                        "thèmes fiche": [["Coordonnées|projeté orthogonal|trigonométrie", "pdf/seconde/milieuLongueur/Coordonnees_projete_orthogonal_trigonometrie.pdf"],
+                        ["Milieu et longueur(calculs de base)", "pdf/seconde/milieuLongueur/Milieu_longueur_calculs_de_base.pdf"],
+                        ["Milieu et longueur(divers)", "pdf/seconde/milieuLongueur/Milieu_longueur.pdf"],
+                        ["Points alignés(longueurs)", "pdf/seconde/milieuLongueur/Points_alignes_avec_les_longueurs.pdf"],
+                        ],
+                        "thèmes ligne": [["#", "#"]],
+                    },
+                    'Nombres et calculs': {
+                        'image': 9,
+                        "thèmes fiche": [["Décomposition en facteurs premiers", "pdf/seconde/nombresCalculs/Decomposition_en_facteurs_premiers.pdf"],
+                        ["Fractions", "pdf/seconde/nombresCalculs/Fractions.pdf"],
+                        ["Puissances", "pdf/seconde/nombresCalculs/Puissances.pdf"],
+                        ["Racines", "pdf/seconde/nombresCalculs/Racines.pdf"],
+                        ],
+                        "thèmes ligne": [["#", "#"]],
+                    }
                 }
-
             }
         }
     }
@@ -141,4 +158,5 @@ export default {
     #carouselClass {
         width: 21.5em;
     }
-}</style>
+}
+</style>
