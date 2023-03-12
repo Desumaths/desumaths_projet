@@ -1,5 +1,5 @@
 # Desum@th : Le site de Christophe
-<img src='https://github.com/DarkSATHI/desumath_work/blob/main/public/sidebar-image.png?raw=true' width="300" />
+<center><img src='https://github.com/DarkSATHI/desumath_work/blob/main/public/sidebar-image.png?raw=true' width="300" /></center>
 
 Ce site, comme son nom l'indique est un site (optimisé pour le navigateur Chrome) uniquement dédié à l'entraînement en mathématiques.
 
@@ -25,5 +25,5 @@ Tout ce qui fonctionne mal ou pas est dû à mon incompétence ou au fait que je
 
 Encore un immense merci pour ces explications et cette patience.
 
-<img src='https://github.com/DarkSATHI/desumath_work/blob/main/public/sidebar-image.jpg?raw=true' width="300" />
+<center><img src='https://github.com/DarkSATHI/desumath_work/blob/main/public/sidebar-image.jpg?raw=true' width="300" /></center>
 
