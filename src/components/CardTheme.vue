@@ -8,9 +8,9 @@
                     <div class="accordion accordion-flush" :id="`accordionFlush${key_card}FicheExercices`">
                         <div class="accordion-item">
                             <h2 class="accordion-header" :id="`flush-heading${key_card}FicheExercices`">
-                                <button :class="`accordion-button ${collapsed_prop}`" type="button" data-bs-toggle="collapse"
-                                    :data-bs-target="`#flush-collapse${key_card}FicheExercices`" aria-expanded="false"
-                                    :aria-controls="`flush-collapse${key_card}FicheExercices`">
+                                <button :class="`accordion-button ${collapsed_prop}`" type="button"
+                                    data-bs-toggle="collapse" :data-bs-target="`#flush-collapse${key_card}FicheExercices`"
+                                    aria-expanded="false" :aria-controls="`flush-collapse${key_card}FicheExercices`">
                                     Les fiches d'exercices
                                 </button>
                             </h2>
@@ -33,9 +33,9 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" :id="`flush-heading${key_card}LigneExercices`">
-                                <button :class="`accordion-button ${collapsed_prop}`" type="button" data-bs-toggle="collapse"
-                                    :data-bs-target="`#flush-collapse${key_card}LigneExercices`" aria-expanded="false"
-                                    :aria-controls="`flush-collapse${key_card}LigneExercices`">
+                                <button :class="`accordion-button ${collapsed_prop}`" type="button"
+                                    data-bs-toggle="collapse" :data-bs-target="`#flush-collapse${key_card}LigneExercices`"
+                                    aria-expanded="false" :aria-controls="`flush-collapse${key_card}LigneExercices`">
                                     L'entraînement en ligne
                                 </button>
                             </h2>
@@ -78,7 +78,7 @@ export default {
     },
     inheritAttrs: false,
     props: {
-        collapsed_prop:{
+        collapsed_prop: {
             type: String,
             default: "collapsed"
         },
@@ -109,10 +109,11 @@ export default {
 </script>
 
 <style scoped>
-.container{
-    margin:0;
-    padding:0;
+.container {
+    margin: 0;
+    padding: 0;
 }
+
 .card-title {
     text-align: center;
     font-family: titre;
@@ -123,6 +124,9 @@ export default {
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
 }
 
 a {
@@ -147,6 +151,7 @@ a {
     font-weight: bold;
     text-shadow: 0.1vw 0.1vw 0.1vw grey;
     font-size: 14px;
+    padding-left: 0px;
 }
 
 .accordion-button {

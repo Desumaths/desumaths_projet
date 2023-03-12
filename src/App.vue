@@ -88,6 +88,10 @@ body {
   }
 }
 
+svg{
+  animation: rotation 4s infinite;
+}
+
 @media screen and (max-width: 900px) {
   .fs-1 {
     font-size: 40px !important;

@@ -76,7 +76,28 @@ export default {
                         ["Equations de degré 1", "#"],
                         ["Equations de degré 2", "#"]
                         ]
+                    },'Factorisation':{
+                        "image" : 5,
+                        "thèmes fiche": [["Factorisation", "pdf/seconde/factorisation/Factorisation.pdf"]],
+                        "thèmes ligne": [["#", "#"]]
                     },
+                    'Fonction':{
+                        "image" : 6,
+                        "thèmes fiche": [["Images antécédents", "pdf/seconde/fonctions/Images_antecedents_equations_inequations_graphiques.pdf"],
+                                         ["Hyperboles", "pdf/seconde/fonctions/Hyperboles_et_questions.pdf"],
+                                         ["Paraboles", "pdf/seconde/fonctions/Paraboles_et_questions.pdf"],
+                                         ["Parité(graphique)", "pdf/seconde/fonctions/Parite_(aspect_graphique).pdf"],
+                                         ["Parité(calculs)", "pdf/seconde/fonctions/Parite_(par_calculs).pdf"],
+                                         ["Sens de variations de fonctions(calculs)","pdf/seconde/fonctions/Sens_de_variations_de_fonctions_(par_calculs).pdf"],
+                                         ["Variations de fonctions(calculs)", "pdf/seconde/fonctions/Variations_de_fonctions_(par_calculs).pdf"],
+                                         ["Tableaux de variations(questions)", ["pdf/seconde/fonctions/Tableaux_de_variations_et_questions.pdf"]],
+                                         ["Tableaux de valeurs de courbes", "pdf/seconde/fonctions/Tableaux_de_valeurs_courbes_et_questions.pdf"],
+                                         ["Tableaux de variations(graphiques)", "pdf/seconde/fonctions/Tableaux_de_variations_(avec_graphiques).pdf"],
+                                         ["Tableaux de variations(équations|inéquations)", "pdf/seconde/fonctions/Tableaux_de_variations_equations_et_inequations.pdf"],
+                                         
+                                        ],
+                        "thèmes ligne": [["#", "#"]]
+                    }
                 }
 
             }
