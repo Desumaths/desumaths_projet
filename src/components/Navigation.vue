@@ -100,6 +100,8 @@ button {
     margin-right: auto !important;
 }
 
+
+
 #nav-tabContent {
     margin-left: 6px !important;
 }
@@ -120,6 +122,12 @@ button {
         width: 90vw;
 
     }
+}
 
+@keyframes a-long-time-ago {
+    0%   { opacity: 0; }
+    20%  { opacity: 1; }
+    80%  { opacity: 1; }
+    100% { opacity: 0; }
 }
 </style>
