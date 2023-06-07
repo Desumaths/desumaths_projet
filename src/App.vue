@@ -1,6 +1,6 @@
 <template>
   <p class="fs-1">
-    <span>D</span>esum@th
+    <span>D</span>esum@ths
   </p>
   <Navigation />
 </template>
