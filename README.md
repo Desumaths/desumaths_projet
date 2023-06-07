@@ -25,7 +25,7 @@ Tout ce qui fonctionne mal ou pas est dû à mon incompétence ou au fait que je
 
 Encore un immense merci pour ces explications et cette patience.
 
-<center><img src='https://github.com/DarkSATHI/desumath_work/blob/main/public/images/presentationDesumath.png?raw=true' width="500" /></center>
+<center><img src='https://github.com/DarkSATHI/desumath_work/blob/main/public/images/presentationDesumath3.png?raw=true' width="500" /></center>
 
 <center><img src='https://github.com/DarkSATHI/desumath_work/blob/main/public/images/presentationDesumath2.png?raw=true' width="500" /></center>
 
