@@ -1,4 +1,4 @@
-# Desum@th : Le site de Christophe
+# Desum@ths : Le site de Christophe
 <center><img src='https://github.com/DarkSATHI/desumath_work/blob/main/public/sidebar-image.png?raw=true' width="300" /></center>
 
 Ce site, comme son nom l'indique est un site (optimisé pour le navigateur Chrome) uniquement dédié à l'entraînement en mathématiques.
