@@ -71,7 +71,7 @@ export default {
                         "thèmes fiche": [["Equations", "pdf/seconde/equations/Equations_diverses.pdf"],
                         ["Equations de degré 2", "pdf/seconde/equations/Equations_de_degre_2.pdf"]
                         ],
-                        "thèmes ligne": [["Equations avec factorisation", "#"],
+                        "thèmes ligne": [["Equations avec factorisation", "seconde/equations/factorisation/EqsFacteurcommun.html"],
                         ["Equations produits", "#"],
                         ["Equations quotient", "#"],
                         ["Equations de degré 1", "#"],
