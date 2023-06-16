@@ -64,7 +64,7 @@ export default {
                     'Equations de droites': {
                         "image": 3,
                         "thèmes fiche": [["Equations cartésiennes de droites", "pdf/seconde/equationsDroites/Equations_cartesiennes_de_droites.pdf"]],
-                        "thèmes ligne": [["Equations de droites(calculs)", "#"]]
+                        "thèmes ligne": [["Equations de droites(calculs)", "seconde/equationsDroites/calculs/Eqsdtescalculs.html"]]
                     },
                     'Equations': {
                         "image": 4,
