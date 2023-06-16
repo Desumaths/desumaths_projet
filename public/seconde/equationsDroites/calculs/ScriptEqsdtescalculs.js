@@ -101,7 +101,7 @@ function genererExercice(){
     solution.innerHTML = `$y=${a}x${sb}${b}$`;
     correctiond.innerHTML = `$\\underline{\\text{Coefficient directeur :}}~~a=\\dfrac{y_B-y_A}{x_B-x_A}$<br>
     $a=\\dfrac{${yb}-${pgdya[0]}${ya}${pgdya[1]}}{${xb}-${pgdxa[0]}${xa}${pgdxa[1]}}=\\dfrac{${ybmya}}{${xbmxa}}=${a}$<br>
-    $\\underline{\\text{Otdonnée à l'origine :}}$<br>
+    $\\underline{\\text{Ordonnée à l'origine :}}$<br>
     $\\begin{array}{lrcrclr} A\\in d~\\text{donc} & y_A & = & ax_A+b & = & ${ya} & \\text{donc :} \\\\
     & & & ${a}\\times ${pgdxa[0]} ${xa} ${pgdxa[1]} +b & = & ${ya} & \\text{donc :} \\\\
     & & & ${axa} + b & = & ${ya} & \\text{donc :} \\\\
