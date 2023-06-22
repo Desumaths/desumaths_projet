@@ -41,6 +41,7 @@ export default {
     components: { Class },
     data() {
         return {
+            visible: true,
             presentation: `<img src='sidebar-image.png' alt='illustration Desum@th' id='desumathLogo'><br>Ce site, comme son nom l'indique est un site (optimisé pour le navigateur Chrome) uniquement dédié à l'entraînement en mathématiques.<br>
             Les exercices proposés ne concernent que le niveau Lycée.<br>
             Ce site est un site amateur, d'où son interface minimaliste...<br>
