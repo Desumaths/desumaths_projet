@@ -19,10 +19,11 @@
                     aria-labelledby="nav-presentation-tab" tabindex="0" v-html="presentation">
                 </div>
                 <div class="tab-pane fade" id="nav-seconde" role="tabpanel" aria-labelledby="nav-seconde-tab" tabindex="0">
-                    <Class />
+                    <Class v-if="visible"/>
                 </div>
                 <div class="tab-pane fade" id="nav-premiere" role="tabpanel" aria-labelledby="nav-premiere-tab"
                     tabindex="0">
+                    <Class v-if="!visible"/>
                 </div>
                 <div class="tab-pane fade" id="nav-terminale" role="tabpanel" aria-labelledby="nav-terminale-tab"
                     tabindex="0">
@@ -41,6 +42,7 @@ export default {
     components: { Class },
     data() {
         return {
+            visible: true,
             presentation: `<img src='sidebar-image.png' alt='illustration Desum@th' id='desumathLogo'><br>Ce site, comme son nom l'indique est un site (optimisé pour le navigateur Chrome) uniquement dédié à l'entraînement en mathématiques.<br>
             Les exercices proposés ne concernent que le niveau Lycée.<br>
             Ce site est un site amateur, d'où son interface minimaliste...<br>
@@ -125,9 +127,19 @@ button {
 }
 
 @keyframes a-long-time-ago {
-    0%   { opacity: 0; }
-    20%  { opacity: 1; }
-    80%  { opacity: 1; }
-    100% { opacity: 0; }
-}
-</style>
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}</style>
