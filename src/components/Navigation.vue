@@ -23,7 +23,7 @@
                 </div>
                 <div class="tab-pane fade" id="nav-premiere" role="tabpanel" aria-labelledby="nav-premiere-tab"
                     tabindex="0">
-                    <Class v-if="!visible"/>
+                    <Class v-if="!visible" classe="premiere"/>
                 </div>
                 <div class="tab-pane fade" id="nav-terminale" role="tabpanel" aria-labelledby="nav-terminale-tab"
                     tabindex="0">
@@ -54,7 +54,10 @@ export default {
             Et bien plus qu'un grand merci à Darksathi sans qui ce site n'existerait tout simplement pas.<br>
             Tout ce qui fonctionne sur ce site (et le site lui-même) ce sont son aide et ses explications qui l'ont permis.<br>
             Tout ce qui fonctionne mal ou pas est dû à mon incompétence ou au fait que je n'ai pas réussi à mettre en œuvre ce qu'il m'a expliqué.<br>
-            Encore un immense merci pour ces explications et cette patience.`
+            Encore un immense merci pour ces explications et cette patience.`,
+            premiere:{
+
+            }
         }
     }
 }
