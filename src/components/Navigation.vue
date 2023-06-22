@@ -55,9 +55,6 @@ export default {
             Tout ce qui fonctionne sur ce site (et le site lui-même) ce sont son aide et ses explications qui l'ont permis.<br>
             Tout ce qui fonctionne mal ou pas est dû à mon incompétence ou au fait que je n'ai pas réussi à mettre en œuvre ce qu'il m'a expliqué.<br>
             Encore un immense merci pour ces explications et cette patience.`,
-            premiere:{
-
-            }
         }
     }
 }
