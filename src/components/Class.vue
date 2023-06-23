@@ -153,12 +153,15 @@ export default {
                         "thèmes fiche": [["Systèmes(calculs)", "pdf/seconde/systemes/Systemes_(calculs).pdf"],
                         ["Systèmes(graphiques)", "pdf/seconde/systemes/Systemes_(graphiques).pdf"]
                         ],
-                        "thèmes ligne": [["Systèmes(faciles)", "seconde/systemes/systemes_faciles/Systemes(tombe_juste).html"]]
+                        "thèmes ligne": [["Systèmes(faciles)", "seconde/systemes/systemes_faciles/Systemes(tombe_juste).html"],
+                                            ]
                     },
                     'Valeur absolue': {
                         "image": 13,
                         "thèmes fiche": [["Valeur absolue(équations|inéquations)", "pdf/seconde/valeurAbsolue/Valeur_absolue(équations_inéquations).pdf"]],
-                        "thèmes ligne": [["Équations", "seconde/valeurAbsolue/equations/EquationsValAbs.html"]]
+                        "thèmes ligne": [["Équations", "seconde/valeurAbsolue/equations/EquationsValAbs.html"],
+                        ["Inéquations", "seconde/valeurAbsolue/inequations/InequationsValAbs.html"]
+                    ]
                     },
                     'Vecteurs': {
                         "image": 1,
