@@ -29,83 +29,95 @@ function sign1() {
 
 
 function signe() {
-    let a = nbrealéa(1,2);
+    let a = nbrealéa(1, 2);
     let sig;
-    if (a==1) {sig='+';} else {sig='-';}
+    if (a == 1) { sig = '+'; } else { sig = '-'; }
     return sig;
 }
 
-function signedeuxiemeparenthese(s1,s2) {
+function signedeuxiemeparenthese(s1, s2) {
     let reponse;
-    if (s1=='+' && s2=='') {reponse='+';}
-    else if (s1=='+' && s2=='+') {reponse='+';}
-    else if (s1=='-' && s2=='-') {reponse='+';}
-    else {reponse='-';}
+    if (s1 == '+' && s2 == '') { reponse = '+'; }
+    else if (s1 == '+' && s2 == '+') { reponse = '+'; }
+    else if (s1 == '-' && s2 == '-') { reponse = '+'; }
+    else { reponse = '-'; }
     return reponse;
 }
 
-let a = nbrealéa(1, 9);
-let b = nbrealéa(1, 9);
-let identité = nbrealéa(0,2);
-let signe1 = sign1();
-let acarré = a * a;
-let ab2 = 2 * a * b;
-let bcarré = b * b;
-let sig1 = signedeuxiemeparenthese('+',signe1);
-let sig2 = signedeuxiemeparenthese('-',signe1);
+
 let enonce = document.getElementById('enonce');
-let correctiond = document.getElementById('correctiond');
-var correction = document.getElementById('correction');
-var solutions = document.getElementById('solutions');
 let solution = document.getElementById('solution');
+let correctiond = document.getElementById('correctiond');
+let solutions = document.getElementById('solutions');
+let correction = document.getElementById('correction');
+let recommencer = document.getElementById('recommencer');
+
+let a ,b ,identité ,signe1 ,acarré ,ab2 ,bcarré ,sig1 ,sig2;
 
 
-let listenonces = [`Développer : $\\boldsymbol{\\left(${signe1} ~ ${a}x + ${b}\\right)^2}$`,
+function genererExercice() {
+
+
+     a = nbrealéa(1, 9);
+     b = nbrealéa(1, 9);
+     identité = nbrealéa(0, 2);
+     signe1 = sign1();
+     acarré = a * a;
+     ab2 = 2 * a * b;
+     bcarré = b * b;
+     sig1 = signedeuxiemeparenthese('+', signe1);
+     sig2 = signedeuxiemeparenthese('-', signe1);
+
+     enonce = document.getElementById('enonce');
+     correctiond = document.getElementById('correctiond');
+     correction = document.getElementById('correction');
+     solutions = document.getElementById('solutions');
+     solution = document.getElementById('solution');
+
+
+    let listenonces = [`Développer : $\\boldsymbol{\\left(${signe1} ~ ${a}x + ${b}\\right)^2}$`,
     `Développer : $\\boldsymbol{\\left(${signe1} ~ ${a}x - ${b}\\right)^2}$`,
     `Développer : $\\boldsymbol{\\left(${a}x + ${b}\\right) \\left(${a}x - ${b}\\right)}$`
-]
+    ]
 
-let listeSolutions = [`Solution : $${acarré}x^2 ${sig1} ${ab2}x + ${bcarré}$`,
+    let listeSolutions = [`Solution : $${acarré}x^2 ${sig1} ${ab2}x + ${bcarré}$`,
     `Solution : $${acarré}x^2 ${sig2} ${ab2}x + ${bcarré}$`,
     `Solution : $${acarré}x^2 - ${bcarré}$`
-]
+    ]
 
-let listeCorrections = [`$\\begin{array}{rcl} \\left(${signe1} ~ ${a}x + ${b}\\right)^2 & = & \\underbrace{(${signe1} ${a}x)^2}_{a^2} + \\underbrace{2\\times (${signe1} ${a}x) \\times ${b}}_{2ab} + \\underbrace{(${b})^2}_{b^2} \\\\
+    let listeCorrections = [`$\\begin{array}{rcl} \\left(${signe1} ~ ${a}x + ${b}\\right)^2 & = & \\underbrace{(${signe1} ${a}x)^2}_{a^2} + \\underbrace{2\\times (${signe1} ${a}x) \\times ${b}}_{2ab} + \\underbrace{(${b})^2}_{b^2} \\\\
 & = & ${acarré}x^2 ${sig1} ${ab2}x + ${bcarré} \\end{array}$`,
-`$\\begin{array}{rcl} \\left(${signe1} ~ ${a}x - ${b}\\right)^2  & = & \\underbrace{(${signe1} ${a}x)^2}_{a^2} - \\underbrace{2\\times (${signe1} ${a}x) \\times ${b}}_{2ab} + \\underbrace{(${b})^2}_{b^2} \\\\
+    `$\\begin{array}{rcl} \\left(${signe1} ~ ${a}x - ${b}\\right)^2  & = & \\underbrace{(${signe1} ${a}x)^2}_{a^2} - \\underbrace{2\\times (${signe1} ${a}x) \\times ${b}}_{2ab} + \\underbrace{(${b})^2}_{b^2} \\\\
 & = & ${acarré}x^2 ${sig2} ${ab2}x + ${bcarré} \\end{array}$`,
-`$\\begin{array}{rcl} \\underbrace{\\left(${a}x + ${b}\\right)}_{a+b} \\underbrace{\\left(${a}x - ${b}\\right)}_{a-b} & = & \\underbrace{(${a}x)^2}_{a^2} - \\underbrace{${b}^2}_{b^2} \\\\
+    `$\\begin{array}{rcl} \\underbrace{\\left(${a}x + ${b}\\right)}_{a+b} \\underbrace{\\left(${a}x - ${b}\\right)}_{a-b} & = & \\underbrace{(${a}x)^2}_{a^2} - \\underbrace{${b}^2}_{b^2} \\\\
 & = & ${acarré}x^2 - ${bcarré} \\end{array}$`
-]
+    ]
 
-enonce.innerHTML = listenonces[identité];
-solution.innerHTML = listeSolutions[identité];
-correctiond.innerHTML = listeCorrections[identité];
+    enonce.innerHTML = listenonces[identité];
+    solution.innerHTML = listeSolutions[identité];
+    correctiond.innerHTML = listeCorrections[identité];
 
-enonce.addEventListener("load", function () {
+}
+
+window.addEventListener('load', function () {
+    genererExercice()
     MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
 })
 
-correction.addEventListener('click', () => {
-    correctiond.style.display = "block";
-})
-
-recommencer.addEventListener('click', () => {
-    location.reload(true);
+enonce.addEventListener("load", function () {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
 })
 
 solutions.addEventListener('click', () => {
     solution.style.display = "block";
 })
 
-accueil.addEventListener('click', () => {
-    location.href = "../../../index.html";
+correction.addEventListener('click', () => {
+    correctiond.style.display = "block";
+    correctiond.innerHTML;
 })
 
-MenuSeconde.addEventListener('click', () => {
-    location.href = "../../../Menus/MenuSeconde.html";
-})
-
-MenuSecondeEquations.addEventListener('click', () => {
-    location.href = "../../../Menus/MenuSecondeDeveloppements.html";
+recommencer.addEventListener('click', () => {
+    genererExercice();
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
 })
