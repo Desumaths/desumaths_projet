@@ -22,7 +22,7 @@
 
 <script>
 import CardTheme from './CardTheme.vue'
-import seconde from '../structures'
+import seconde from '../structures/seconde.js'
 
 export default {
     name: 'Classe-module',

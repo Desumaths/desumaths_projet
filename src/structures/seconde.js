@@ -1,4 +1,4 @@
-export let seconde =  {
+export default  {
     "Développement": {
         "image": 2,
         "thèmes fiche": [['Développement', "pdf/seconde/developpements/Developpement.pdf"]],
