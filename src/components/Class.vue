@@ -158,7 +158,7 @@ export default {
                     'Valeur absolue': {
                         "image": 13,
                         "thèmes fiche": [["Valeur absolue(équations|inéquations)", "pdf/seconde/valeurAbsolue/Valeur_absolue(équations_inéquations).pdf"]],
-                        "thèmes ligne": [["#", "#"]]
+                        "thèmes ligne": [["Équations", "seconde/valeurAbsolue/equations/EquationsValAbs.html"]]
                     },
                     'Vecteurs': {
                         "image": 1,

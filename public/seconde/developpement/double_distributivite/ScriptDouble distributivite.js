@@ -153,13 +153,9 @@ function test_réponse(e,f,g,h,i,j,k,l,m,n) {
 let enonce = document.getElementById('enonce');
   let solution = document.getElementById('solution');
   let correctiond = document.getElementById('correctiond');
-  let valider = document.getElementById('valider');
   let solutions = document.getElementById('solutions');
   let correction = document.getElementById('correction');
   let recommencer = document.getElementById('recommencer');
-  let accueil = document.getElementById('accueil');
-  let test = document.getElementById('test');
-  let image = document.getElementById('BouleMath');
 
   let a, b, c, d, signe1,signe2,signe3,signe4,coef1,coef2,coef3,repsig1,repsig2,rep_sig_2,repsig3,pm1,pm2,pm3,pm_3,pm4,reps2,reps3,ad,bc,parg1,pard1,parg2,pard2,a1,a2,a3,Test;
 
