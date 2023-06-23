@@ -87,60 +87,65 @@ let correction = document.getElementById('correction');
 let solutions = document.getElementById('solutions');
 let solution = document.getElementById('solution');
 
-let a ,b ,d ,solx ,soly ,e ,c ,f ,s1 ,s2 ,det ,rep ,xsimpl ,ysimpl ,signex ,signey ,k ,reponsesimplifieex ,
-reponsesimplifieey ,multi ,s_1 ,s_2 ,coefy ,r ,sopp1 ,sopp2 ,s3 ,presquexnum ,presquexdenom ,presquex ,
-pgd1 ,pgd2 ,pgd3 ,y;
+let a, b, d, solx, soly, e, c, f, s1, s2, det, rep, xsimpl, ysimpl, signex, signey, k, reponsesimplifieex,
+    reponsesimplifieey, multi, s_1, s_2, coefy, r, sopp1, sopp2, s3, presquexnum, presquexdenom, presquex,
+    pgd1, pgd2, pgd3, y, pgdy ,by ,sby ,opby ,sopby ;
 
 function genererExercice() {
 
-     a = plusmoins(nbrealéa(1, 9));
-     b = nbrealéa(-9, 9);
-     d = plusmoins(nbrealéa(1, 9));
-     solx = nbrealéa(-15, 15);
-     soly = nbrealéa(-15, 15);
-     e = nbrealéa(-9, 9);
-     c = a * solx + b * soly;
-     f = d * solx + e * soly;
-     s1 = signe(b);
-     s2 = signe(e);
-     det = a * e - b * d;
-     rep = solutions_cas(a, b, c, d, e, f);
-     xsimpl = simplifierfraction(rep[0], rep[1]);
-     ysimpl = simplifierfraction(rep[2], rep[3]);
-     signex = signefraction(xsimpl[0], xsimpl[1]);
-     signey = signefraction(ysimpl[0], ysimpl[1],)
-     k = cas(a, b, c, d, e, f);
-     reponsesimplifieex = repsimple(signex[0], signex[1], signex[2]);
-     reponsesimplifieey = repsimple(signey[0], signey[1], signey[2]);
-     multi = signmulti(a, d);
-     s_1 = signe(b * multi[0]);
-     s_2 = signe(e * multi[1]);
-     coefy = b * multi[0] + e * multi[1];
-     r = c * multi[0] + f * multi[1];
-     sopp1 = signe(-b);
-     sopp2 = signe(-a);
-     s3 = signe(c);
-     presquexnum = a * c * e - a * b * f;
-     presquexdenom = a * e - b * d;
-     presquex = simplifierfraction(presquexnum, presquexdenom);
-     pgd1 = parenthesesgd(multi[0]);
-     pgd2 = parenthesesgd(multi[1]);
-     pgd3 = parenthesesgd(a);
-     y = r / coefy;
+    a = plusmoins(nbrealéa(1, 9));
+    b = nbrealéa(-9, 9);
+    d = plusmoins(nbrealéa(1, 9));
+    solx = nbrealéa(-15, 15);
+    soly = nbrealéa(-15, 15);
+    e = nbrealéa(-9, 9);
+    c = a * solx + b * soly;
+    f = d * solx + e * soly;
+    s1 = signe(b);
+    s2 = signe(e);
+    det = a * e - b * d;
+    rep = solutions_cas(a, b, c, d, e, f);
+    xsimpl = simplifierfraction(rep[0], rep[1]);
+    ysimpl = simplifierfraction(rep[2], rep[3]);
+    signex = signefraction(xsimpl[0], xsimpl[1]);
+    signey = signefraction(ysimpl[0], ysimpl[1],)
+    k = cas(a, b, c, d, e, f);
+    reponsesimplifieex = repsimple(signex[0], signex[1], signex[2]);
+    reponsesimplifieey = repsimple(signey[0], signey[1], signey[2]);
+    multi = signmulti(a, d);
+    s_1 = signe(b * multi[0]);
+    s_2 = signe(e * multi[1]);
+    coefy = b * multi[0] + e * multi[1];
+    r = c * multi[0] + f * multi[1];
+    sopp1 = signe(-b);
+    sopp2 = signe(-a);
+    s3 = signe(c);
+    presquexnum = a * c * e - a * b * f;
+    presquexdenom = a * e - b * d;
+    presquex = simplifierfraction(presquexnum, presquexdenom);
+    pgd1 = parenthesesgd(multi[0]);
+    pgd2 = parenthesesgd(multi[1]);
+    pgd3 = parenthesesgd(a);
+    y = r / coefy;
+    pgdy = parenthesesgd(y);
+    by = b * y;
+    sby = signe(by);
+    opby = -b * y;
+    sopby = signe(opby);
 
     let listeSolutions = [`$x=${solx}$ et $y=${soly}$ </br> $S=\\left\\{\\left(${solx}~;${soly}\\right)\\right\\}$`,
-        `Les droites sont confondues`,
-        `Pas de solution. $S = \\varnothing$`];
+`Les droites sont confondues`,
+`Pas de solution. $S = \\varnothing$`];
 
-    let listeCorrections = [`$\\left\\{ \\begin{array}{rcl} ${a}x ${s1} ${b}y & = & ${c}~(L_1) \\\\ ${d}x ${s2} ${e}y & = & ${f}~(L_2) \\end{array} \\right. \\iff \\left\\{ \\begin{array}{rcl} ${a * multi[0]}x ${s_1} ${b * multi[0]}y & = & ${c * multi[0]} \\hspace{1cm} \\left(L'_1=L_1\\times ${pgd1[0]} ${multi[0]} ${pgd1[1]}\\right) \\\\ ${d * [multi[1]]}x ${s_2} ${e * multi[1]}y & = & ${f * multi[1]} \\hspace{1cm} \\left(L'_2=L_2\\times ${pgd2[0]} ${multi[1]} ${pgd2[1]} \\right) \\end{array} \\right.$</br></br>
+let listeCorrections = [`$\\left\\{ \\begin{array}{rcl} ${a}x ${s1} ${b}y & = & ${c}~(L_1) \\\\ ${d}x ${s2} ${e}y & = & ${f}~(L_2) \\end{array} \\right. \\iff \\left\\{ \\begin{array}{rcl} ${a*multi[0]}x ${s_1} ${b*multi[0]}y & = & ${c*multi[0]} \\hspace{1cm} \\left(L'_1=L_1\\times ${pgd1[0]} ${multi[0]} ${pgd1[1]}\\right) \\\\ ${d*[multi[1]]}x ${s_2} ${e*multi[1]}y & = & ${f*multi[1]} \\hspace{1cm} \\left(L'_2=L_2\\times ${pgd2[0]} ${multi[1]} ${pgd2[1]} \\right) \\end{array} \\right.$</br></br>
 En additionnant $L'_1$ et $L'_2$ on obtient : $${coefy}y = ${r}$ donc $\\boxed{~y=\\dfrac{${r}}{${coefy}} ${reponsesimplifieey}~}$</br></br>
-Ensuite on remplace $y$ par $${y}$ dans $L_1$ : $${a}x ${s1} ${b} \\times ${y} = ${c}$</br></br>
-Donc $${a}x  = ${c} ${sopp1} ${-b} \\times ${y}=${presquex[0]}$ donc $x=\\dfrac{${presquex[0]}}{${pgd3[0]} ${a} ${pgd3[1]}}: $ donc $\\boxed{~x${reponsesimplifieex}~}$`,
-    `$\\left\\{ \\begin{array}{rcl} ${a}x ${s1} ${b}y & = & ${c}~(L_1) \\\\ ${d}x ${s2} ${e}y & = & ${f}~(L_2) \\end{array} \\right. \\iff \\left\\{ \\begin{array}{rcl} ${a * multi[0]}x ${s_1} ${b * multi[0]}y & = & ${c * multi[0]} \\hspace{1cm} \\left(L'_1=L_1\\times (${multi[0]})\\right) \\\\ ${d * [multi[1]]}x ${s_2} ${e * multi[1]}y & = & ${f * multi[1]} \\hspace{1cm} \\left(L'_2=L_2\\times (${multi[1]})\\right) \\end{array} \\right.$</br></br>
+Ensuite on remplace $y$ par $${y}$ dans $L_1$ : $${a}x ${s1} ${b} \\times ${pgdy[0]} ${y} ${pgdy[1]} = ${c}$</br></br>
+Donc $${a}x ${sby} ${by} = ${c}$ donc $${a}x = ${c} ${sopby} ${opby} = ${presquex[0]}$ donc $x=\\dfrac{${presquex[0]}}{${a}}: $ donc $\\boxed{~x${reponsesimplifieex}~}$`,
+`$\\left\\{ \\begin{array}{rcl} ${a}x ${s1} ${b}y & = & ${c}~(L_1) \\\\ ${d}x ${s2} ${e}y & = & ${f}~(L_2) \\end{array} \\right. \\iff \\left\\{ \\begin{array}{rcl} ${a*multi[0]}x ${s_1} ${b*multi[0]}y & = & ${c*multi[0]} \\hspace{1cm} \\left(L'_1=L_1\\times (${multi[0]})\\right) \\\\ ${d*[multi[1]]}x ${s_2} ${e*multi[1]}y & = & ${f*multi[1]} \\hspace{1cm} \\left(L'_2=L_2\\times (${multi[1]})\\right) \\end{array} \\right.$</br></br>
 En additionnant $L'_1$ et $L'_2$ on obtient : ${coefy}y = ${r} donc les droites sont confondues.</br>
 On isole alors $y$ dans $L_1$ : $${a}x ${s1} ${b}y = ${c} \\iff ${s1} ${b}y = ${sopp2} ${a}x ${s3} ${c} \\iff y = \\dfrac{${sopp2} ${a}x ${s3} ${c}}{${s1} ${b}}$</br>
 $S = \\left\\{\\left( x~;~\\dfrac{${sopp2} ${a}x ${s3} ${c}}{${s1} ${b}} \\right) / x \\in \\mathbb{R} \\right\\}$`,
-    `$\\left\\{ \\begin{array}{rcl} ${a}x ${s1} ${b}y & = & ${c}~(L_1) \\\\ ${d}x ${s2} ${e}y & = & ${f}~(L_2) \\end{array} \\right. \\iff \\begin{cases} ${a * multi[0]}x ${s_1} ${b * multi[0]}y & = & ${c * multi[0]} \\hspace{1cm} \\left(L'_1=L_1\\times (${multi[0]})\\right) \\\\ ${d * [multi[1]]}x ${s_2} ${e * multi[1]}y & = & ${f * multi[1]} \\hspace{1cm} \\left(L'_2=L_2\\times (${multi[1]})\\right) \\end{array} \\right.$</br></br>
+`$\\left\\{ \\begin{array}{rcl} ${a}x ${s1} ${b}y & = & ${c}~(L_1) \\\\ ${d}x ${s2} ${e}y & = & ${f}~(L_2) \\end{array} \\right. \\iff \\begin{cases} ${a*multi[0]}x ${s_1} ${b*multi[0]}y & = & ${c*multi[0]} \\hspace{1cm} \\left(L'_1=L_1\\times (${multi[0]})\\right) \\\\ ${d*[multi[1]]}x ${s_2} ${e*multi[1]}y & = & ${f*multi[1]} \\hspace{1cm} \\left(L'_2=L_2\\times (${multi[1]})\\right) \\end{array} \\right.$</br></br>
 En additionnant $L'_1$ et $L'_2$ on obtient : ${coefy}y = ${r} ce qui est impossible. $\\boxed{S = \\varnothing}$`]
 
 
