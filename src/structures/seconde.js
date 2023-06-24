@@ -19,7 +19,7 @@ export default  {
         ["Equations produits", "#"],
         ["Equations quotient", "#"],
         ["Equations de degré 1", "seconde/equations/degre1/Equationsdegre1.html"],
-        ["Equations de degré 2", "#"]
+        ["Equations de degré 2 : "+ `$ax^2 + b = c$`, "seconde/equations/degre2/axcarreplusbegalc/axcarreplusbegalc.html"]
         ]
     }, 'Factorisation': {
         "image": 5,
