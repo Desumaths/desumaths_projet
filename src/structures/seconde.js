@@ -19,7 +19,9 @@ export default  {
         ["Equations produits", "#"],
         ["Equations quotient", "#"],
         ["Equations de degré 1", "seconde/equations/degre1/Equationsdegre1.html"],
-        ["Equations de degré 2 : "+ `$ax^2 + b = c$`, "seconde/equations/degre2/axcarreplusbegalc/axcarreplusbegalc.html"]
+        [`$ax^2 + b = c$`, "seconde/equations/degre2/axcarreplusbegalc/axcarreplusbegalc.html"],
+        [`$(ax + b)^2 = c$`, "seconde/equations/degre2/axplusbcarreegalc/axplusbcarreegalc.html"],
+        [`$x^2 = a$`, "seconde/equations/degre2/xcarreegala/xcarreegala.html"]
         ]
     }, 'Factorisation': {
         "image": 5,
