@@ -18,7 +18,7 @@ export default  {
         "thèmes ligne": [["Equations avec factorisation", "#"],
         ["Equations produits", "#"],
         ["Equations quotient", "#"],
-        ["Equations de degré 1", "#"],
+        ["Equations de degré 1", "seconde/equations/degre1/Equationsdegre1.html"],
         ["Equations de degré 2", "#"]
         ]
     }, 'Factorisation': {
