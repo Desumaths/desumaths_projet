@@ -24,6 +24,7 @@ function test_réponse(a, b, c) {
 }
 
 
+
 let enonce = document.getElementById('enonce');
 let solution = document.getElementById('solution');
 let correctiond = document.getElementById('correctiond');
@@ -31,33 +32,22 @@ let solutions = document.getElementById('solutions');
 let correction = document.getElementById('correction');
 let recommencer = document.getElementById('recommencer');
 
-let a ,b ,c ,s ,opb ,videoupas;
-
-enonce = document.getElementById('enonce');
-correctiond = document.getElementById('correctiond');
-correction = document.getElementById('correction');
-solutions = document.getElementById('solutions');
-solution = document.getElementById('solution');
+let a, b, c, s, opb, videoupas;
 
 function genererExercice() {
 
-     a = nbrealéa(1, 10);
-     b = nbrealéa(-10, 10);
-     c = nbrealéa(-10, 50);
-     s = signe(b);
-     opb = -b;
-     videoupas = sol(c);
-     enonce = document.getElementById('enonce');
-     correctiond = document.getElementById('correctiond');
-     correction = document.getElementById('correction');
-     solutions = document.getElementById('solutions');
-     solution = document.getElementById('solution');
+    let a = nbrealéa(1, 10);
+    let b = nbrealéa(-10, 10);
+    let c = nbrealéa(-10, 50);
+    let s = signe(b);
+    let opb = -b;
+    let videoupas = sol(c);
 
     let listeSolutions = [`$S=\\varnothing$`, `$S=\\left\\\{\\dfrac{${opb} + \\sqrt{${c}}}{${a}}~;~\\dfrac{${opb} - \\sqrt{${c}}}{${a}}\\right\\\}$`];
     let listeCorrections = [`$${c}$ est négatif donc il n'y a pas de solution`,
     `$\\begin{array}{rcrclcrcl} \\left(${a}x ${s} ${b}\\right)^2=${c} & \\iff & ${a}x ${s} ${b} & = & \\sqrt{${c}} & \\text{ou} & ${a}x ${s} ${b} & = & -\\sqrt{${c}} \\\\
-    & \\iff & ${a}x & = & ${opb} + \\sqrt{${c}} & \\text{ou} & ${a}x & = & ${opb} - \\sqrt{${c}} \\\\
-    & \\iff & x & = & \\dfrac{${opb} + \\sqrt{${c}}}{${a}} & \\text{ou} & x & = & \\dfrac{${opb} - \\sqrt{${c}}}{${a}} \\end{array}$`];
+& \\iff & ${a}x & = & ${opb} + \\sqrt{${c}} & \\text{ou} & ${a}x & = & ${opb} - \\sqrt{${c}} \\\\
+& \\iff & x & = & \\dfrac{${opb} + \\sqrt{${c}}}{${a}} & \\text{ou} & x & = & \\dfrac{${opb} - \\sqrt{${c}}}{${a}} \\end{array}$`];
 
     enonce.innerHTML = `Résoudre dans $\\mathbb{R}$ l'équation : $\\left(${a}x ${s} ${b}\\right)^2=${c}$`;
     solution.innerHTML = listeSolutions[videoupas];
