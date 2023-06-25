@@ -1,62 +1,25 @@
 function nbrealéa(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min +1)) + min;
-  }
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
-function nbreouoppose(a) {
+function signe(a) {
     let rep;
-    let choix = nbrealéa(1,2);
-    if (choix==1) {rep=a;} else {rep=-a;}
+    if (a < 0) { rep = ''; } else { rep = '+'; }
     return rep;
 }
 
-function rienplus(a) {
+function sol(a) {
     let rep;
-    if (a<0) {rep='';} else {rep='+';}
+    if (a < 0) { rep = 0; } else { rep = 1; }
     return rep;
 }
 
-function rienmoins(a) {
-    let rep;
-    if (a<0) {rep='-';} else {rep='';}
-    return rep;
-}
-
-function plusmoins(a) {
-    let rep;
-    if (a<0) {rep='-';} else {rep='+';}
-    return rep;
-}
-
-function valabs(a) {
-    let rep;
-    if (a<0) {rep=-a;} else {rep=a;}
-    return rep;
-}
-
-function parenthesesgd(a) {
-    let rep;
-    let parg;
-    let pard;
-    if (a<0) {parg='(';pard=')';} else {parg='';pard='';}
-    return rep = [parg,pard];
-}
-
-function simplifierfraction(numerateur,denominateur){
-    var gcd = function gcd(a,b){
-      return b ? gcd(b, a%b) : a;
-    };
-    gcd = gcd(numerateur,denominateur);
-    return [numerateur/gcd, denominateur/gcd];
-  }
-
-
-
-function test_réponse(a,b,c) {
+function test_réponse(a, b, c) {
     let test;
-    let div=a/b;
-    if (div==c) {test='Bonne réponse !!';} else {test='Mauvaise réponse';}
+    let div = a / b;
+    if (div == c) { test = 'Bonne réponse !!'; } else { test = 'Mauvaise réponse'; }
     return test;
 }
 
@@ -68,38 +31,37 @@ let solutions = document.getElementById('solutions');
 let correction = document.getElementById('correction');
 let recommencer = document.getElementById('recommencer');
 
-let  a ,b ,xa ,ya ,xb ,yb ,pgdya ,pgdxa ,ybmya ,xbmxa ,sb ,axa ,opaxa ,sopaxa;
+let a ,b ,c ,s ,opb ,videoupas;
+
+enonce = document.getElementById('enonce');
+correctiond = document.getElementById('correctiond');
+correction = document.getElementById('correction');
+solutions = document.getElementById('solutions');
+solution = document.getElementById('solution');
 
 function genererExercice() {
 
-     a = nbreouoppose(nbrealéa(2,10));
-     b = nbrealéa(-10,10);
-     xa = nbrealéa(-15,15);
-     ya = a*xa+b;
-     xb = xa+nbreouoppose(nbrealéa(1,10));
-     yb = a*xb+b;
-     pgdya = parenthesesgd(ya);
-     pgdxa = parenthesesgd(xa);
-     ybmya = yb-ya;
-     xbmxa = xb-xa;
-     sb = rienplus(b);
-     axa= a*xa;
-     opaxa= -axa;
-     sopaxa = rienplus(opaxa);
-    
-       
-    
-    enonce.innerHTML = `Déterminer l'équation réduite de la droite $d$ passant par les points $A(${xa}~;${ya})$ et $B(${xb}~;~${yb})$.`;
-    solution.innerHTML = `$y=${a}x${sb}${b}$`;
-    correctiond.innerHTML = `$\\underline{\\text{Coefficient directeur :}}~~a=\\dfrac{y_B-y_A}{x_B-x_A}$<br>
-    $a=\\dfrac{${yb}-${pgdya[0]}${ya}${pgdya[1]}}{${xb}-${pgdxa[0]}${xa}${pgdxa[1]}}=\\dfrac{${ybmya}}{${xbmxa}}=${a}$<br>
-    $\\underline{\\text{Ordonnée à l'origine :}}$<br>
-    $\\begin{array}{lrcrclr} A\\in d~\\text{donc} & y_A & = & ax_A+b & = & ${ya} & \\text{donc :} \\\\
-     & & & ${a}\\times ${pgdxa[0]} ${xa} ${pgdxa[1]} +b & = & ${ya} & \\text{donc :} \\\\
-     & & & ${axa} + b & = & ${ya} & \\text{donc :} \\\\
-     & & & b & = & ${ya} ${sopaxa} ${opaxa} & \\text{et donc :} \\\\
-     & & & b & = & ${b} &  \\end{array}$<br>
-     $\\underline{\\text{Équation réduite de}~d~:}~~y=${a}x${sb}${b}$`;
+     a = nbrealéa(1, 10);
+     b = nbrealéa(-10, 10);
+     c = nbrealéa(-10, 50);
+     s = signe(b);
+     opb = -b;
+     videoupas = sol(c);
+     enonce = document.getElementById('enonce');
+     correctiond = document.getElementById('correctiond');
+     correction = document.getElementById('correction');
+     solutions = document.getElementById('solutions');
+     solution = document.getElementById('solution');
+
+    let listeSolutions = [`$S=\\varnothing$`, `$S=\\left\\\{\\dfrac{${opb} + \\sqrt{${c}}}{${a}}~;~\\dfrac{${opb} - \\sqrt{${c}}}{${a}}\\right\\\}$`];
+    let listeCorrections = [`$${c}$ est négatif donc il n'y a pas de solution`,
+    `$\\begin{array}{rcrclcrcl} \\left(${a}x ${s} ${b}\\right)^2=${c} & \\iff & ${a}x ${s} ${b} & = & \\sqrt{${c}} & \\text{ou} & ${a}x ${s} ${b} & = & -\\sqrt{${c}} \\\\
+    & \\iff & ${a}x & = & ${opb} + \\sqrt{${c}} & \\text{ou} & ${a}x & = & ${opb} - \\sqrt{${c}} \\\\
+    & \\iff & x & = & \\dfrac{${opb} + \\sqrt{${c}}}{${a}} & \\text{ou} & x & = & \\dfrac{${opb} - \\sqrt{${c}}}{${a}} \\end{array}$`];
+
+    enonce.innerHTML = `Résoudre dans $\\mathbb{R}$ l'équation : $\\left(${a}x ${s} ${b}\\right)^2=${c}$`;
+    solution.innerHTML = listeSolutions[videoupas];
+    correctiond.innerHTML = listeCorrections[videoupas];
 }
 
 window.addEventListener('load', function () {
