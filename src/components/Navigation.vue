@@ -61,6 +61,7 @@ export default {
     background-color: rgba(70, 67, 65, 0.6);
     color: white !important;
     text-shadow: 0.3vw 0.3vw 0.5vw black;
+    margin-bottom: 5px;
 }
 
 .nav-link.active {
