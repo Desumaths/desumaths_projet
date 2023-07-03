@@ -23,6 +23,10 @@
 <script>
 import CardTheme from './CardTheme.vue'
 import seconde from '../structures/seconde.js'
+import premiere_spe from '../structures/premiere_spe.js'
+import premiere_techno from '../structures/premiere_techno.js'
+import terminale_spe from '../structures/terminale_spe.js'
+import terminale_techno from '../structures/terminale_techno.js'
 
 export default {
     name: 'Classe-module',
@@ -56,6 +60,10 @@ export default {
         themes: {
             default: {
                 'seconde': seconde,
+                'premiere_spe': premiere_spe,
+                'premiere_techno': premiere_techno,
+                'terminale_spe': terminale_spe,
+                'terminale_techno': terminale_techno
             }
         }
     }

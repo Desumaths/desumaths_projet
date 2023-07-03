@@ -2,7 +2,7 @@
     <div>
         <div class="container">
             <div class="card">
-                <img :src="'../images/' + classe + image + '.png'" class="card-img-top" alt="image">
+                <img :src="'../images/vignette_' + image + '.png'" class="card-img-top" alt="image">
                 <div class="card-body">
                     <h5 class="card-title">{{ titre }}</h5>
                     <div class="accordion accordion-flush" :id="`accordionFlush${key_card}FicheExercices`">

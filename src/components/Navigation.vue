@@ -6,26 +6,16 @@
                     <button class="nav-link active" id="nav-presentation-tab" data-bs-toggle="tab"
                         data-bs-target="#nav-presentation" type="button" role="tab" aria-controls="nav-presentation"
                         aria-selected="true">Présentation</button>
-                    <button class="nav-link" id="nav-seconde-tab" data-bs-toggle="tab" data-bs-target="#nav-seconde"
-                        type="button" role="tab" aria-controls="nav-seconde" aria-selected="false">Seconde</button>
-                    <button class="nav-link" id="nav-premiere-tab" data-bs-toggle="tab" data-bs-target="#nav-premiere"
-                        type="button" role="tab" aria-controls="nav-premiere" aria-selected="false">Première</button>
-                    <button class="nav-link" id="nav-terminale-tab" data-bs-toggle="tab" data-bs-target="#nav-terminale"
-                        type="button" role="tab" aria-controls="nav-terminale" aria-selected="false">Terminale</button>
+                    <button v-for="(niveau, cle) in niveaux" :key="cle" class="nav-link" :id="`nav-${cle}-tab`" data-bs-toggle="tab" :data-bs-target="`#nav-${cle}`"
+                        type="button" role="tab" :aria-controls="`nav-${cle}`" aria-selected="false" @click="visible = cle">{{niveau}}</button>
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-presentation" role="tabpanel"
                     aria-labelledby="nav-presentation-tab" tabindex="0" v-html="presentation">
                 </div>
-                <div class="tab-pane fade" id="nav-seconde" role="tabpanel" aria-labelledby="nav-seconde-tab" tabindex="0">
-                    <Class />
-                </div>
-                <div class="tab-pane fade" id="nav-premiere" role="tabpanel" aria-labelledby="nav-premiere-tab"
-                    tabindex="0">
-                </div>
-                <div class="tab-pane fade" id="nav-terminale" role="tabpanel" aria-labelledby="nav-terminale-tab"
-                    tabindex="0">
+                <div v-for="(niveau, cle) in niveaux" :key="cle" class="tab-pane fade" :id="`nav-${cle}`" role="tabpanel" :aria-labelledby="`nav-${cle}-tab`" tabindex="0">
+                    <Class v-if="visible == cle" :classe="cle"/>
                 </div>
             </div>
         </div>
@@ -41,7 +31,14 @@ export default {
     components: { Class },
     data() {
         return {
-            visible: true,
+            niveaux: {
+                'seconde': 'Seconde',
+                'premiere_spe': 'Première Spécifique',
+                'premiere_techno': 'Première Technologique',
+                'terminale_spe': 'Terminale Spécifique',
+                'terminale_techno': 'Terminale Technologique'
+            },
+            visible: 'seconde',
             presentation: `<img src='sidebar-image.png' alt='illustration Desum@th' id='desumathLogo'><br>Ce site, comme son nom l'indique est un site (optimisé pour le navigateur Chrome) uniquement dédié à l'entraînement en mathématiques.<br>
             Les exercices proposés ne concernent que le niveau Lycée.<br>
             Ce site est un site amateur, d'où son interface minimaliste...<br>
@@ -64,6 +61,7 @@ export default {
     background-color: rgba(70, 67, 65, 0.6);
     color: white !important;
     text-shadow: 0.3vw 0.3vw 0.5vw black;
+    margin-bottom: 5px;
 }
 
 .nav-link.active {
