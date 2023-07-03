@@ -114,11 +114,4 @@ export default  {
         ["Vecteurs(coordonnées)", "pdf/seconde/vecteurs/Vecteurs_(coordonnees).pdf"]],
         "thèmes ligne": [["#", "#"]]
     },
-    'Dérivées': {
-        "image": 1,
-        "thèmes fiche": [["Constructions de vecteurs", "pdf/seconde/vecteurs/Constructions_de_vecteurs.pdf"],
-        ["Vecteurs(calculs de base)", "pdf/seconde/vecteurs/Vecteurs_(calculs_de_base).pdf"],
-        ["Vecteurs(coordonnées)", "pdf/seconde/vecteurs/Vecteurs_(coordonnees).pdf"]],
-        "thèmes ligne": [["dérivées", "seconde/usurv/usurv.html"]]
-    }
 }
