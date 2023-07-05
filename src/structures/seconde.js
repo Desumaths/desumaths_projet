@@ -1,8 +1,8 @@
-export default  {
+export default {
     "Développement": {
         "image": 2,
         "thèmes fiche": [['Développement', "pdf/seconde/developpements/Developpement.pdf"]],
-        "thèmes ligne": [["Double distributivité", "seconde/developpement/double_distributivite/Double distributivite.html"], 
+        "thèmes ligne": [["Double distributivité", "seconde/developpement/double_distributivite/Double distributivite.html"],
         ["Identité remarquables", "seconde/developpement/identites_remarquables/Identitesremarquables.html"]]
     },
     'Equations de droites': {
@@ -23,14 +23,14 @@ export default  {
         [`\\((ax+b)^2=c\\)`, "seconde/equations/degre2/axplusbcarreegalc/axplusbcarreegalc.html"],
         [`\\(x^2=a\\)`, "seconde/equations/degre2/xcarreeegala/xcarreegala.html"]
         ]
-    }, 
+    },
     'Factorisation': {
         "image": 5,
         "thèmes fiche": [["Factorisation", "pdf/seconde/factorisation/Factorisation.pdf"]],
         "thèmes ligne": [
             ["Différence de carrés", "seconde/factorisation/differenceCarres/Differencedecarres.html"],
             ["Facteur commun", "seconde/factorisation/facteurCommun/Facteurcommun.html"],
-            ["Identités remarquables", "seconde/factorisation/identitesRemarquables/Identitesremarquables.html"]        
+            ["Identités remarquables", "seconde/factorisation/identitesRemarquables/Identitesremarquables.html"]
         ]
     },
     'Fonction': {
@@ -107,21 +107,31 @@ export default  {
         "thèmes fiche": [["Systèmes(calculs)", "pdf/seconde/systemes/Systemes_(calculs).pdf"],
         ["Systèmes(graphiques)", "pdf/seconde/systemes/Systemes_(graphiques).pdf"]
         ],
-        "thèmes ligne": [["Systèmes(faciles)", "seconde/systemes/systemes_faciles/Systemes(tombe_juste).html"],
-                            ]
+        "thèmes ligne": [
+            ["Systèmes(faciles)", "seconde/systemes/systemes_faciles/Systemes(tombe_juste).html"],
+            ["Systèmes(quelconque)", "seconde/systemes/systemes_general/Systemes.html"],
+        ]
     },
     'Valeur absolue': {
         "image": 13,
         "thèmes fiche": [["Valeur absolue(équations|inéquations)", "pdf/seconde/valeurAbsolue/Valeur_absolue(équations_inéquations).pdf"]],
         "thèmes ligne": [["Équations", "seconde/valeurAbsolue/equations/EquationsValAbs.html"],
         ["Inéquations", "seconde/valeurAbsolue/inequations/InequationsValAbs.html"]
-    ]
+        ]
     },
     'Vecteurs': {
         "image": 1,
         "thèmes fiche": [["Constructions de vecteurs", "pdf/seconde/vecteurs/Constructions_de_vecteurs.pdf"],
         ["Vecteurs(calculs de base)", "pdf/seconde/vecteurs/Vecteurs_(calculs_de_base).pdf"],
         ["Vecteurs(coordonnées)", "pdf/seconde/vecteurs/Vecteurs_(coordonnees).pdf"]],
-        "thèmes ligne": [["#", "#"]]
+        "thèmes ligne": [
+            ["Chasles", "seconde/vecteurs/chasles/Chasles.html"],
+            ["Coordonnées", "seconde/vecteurs/coordonnees/CoordsVecteurs.html"],
+            ["Droites parallèles", "seconde/vecteurs/droitesParalleles/DroitesParalleles.html"],
+            ["Egalité de vecteurs", "seconde/vecteurs/egaliteVacteurs/EgaliteVecteurs.html"],
+            ["Parallélisme|Alignement", "seconde/vecteurs/parallelismeAlignement/Paralign.html"],
+            ["Parallèlogramme", "seconde/vecteurs/parallelogramme/VecteursPg.html"],
+            ["Points alignés", "seconde/vecteurs/pointsAlignes/VecteursPa.html"],
+        ]
     },
 }
