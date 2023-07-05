@@ -109,6 +109,7 @@ export default {
 </script>
 
 <style scoped>
+
 .container {
     margin: 0;
     padding: 0;
@@ -160,6 +161,8 @@ a {
     font-weight: bold;
     text-shadow: 3px 3px 1px rgba(3.2, 85.3, 133.7, 1) !important;
 }
+
+
 
 @media screen and (max-width: 900px) {
     .card {

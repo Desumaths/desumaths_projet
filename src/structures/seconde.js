@@ -15,11 +15,13 @@ export default  {
         "thèmes fiche": [["Equations", "pdf/seconde/equations/Equations_diverses.pdf"],
         ["Equations de degré 2", "pdf/seconde/equations/Equations_de_degre_2.pdf"]
         ],
-        "thèmes ligne": [["Equations avec factorisation", "#"],
-        ["Equations produits", "#"],
-        ["Equations quotient", "#"],
-        ["Equations de degré 1", "#"],
-        ["Equations de degré 2", "#"]
+        "thèmes ligne": [["Equations avec factorisation", "seconde/equations/factorisation/EqsFacteurcommun.html"],
+        ["Equations produits", "seconde/equations/produits/Equationsproduits.html"],
+        ["Equations quotient", "seconde/equations/quotients/Equationsquotients.html"],
+        ["Equations de degré 1", "seconde/equations/degre1/Equationsdegre1.html"],
+        [`\\(ax^2+b=c\\)`, "seconde/equations/degre2/axcarreplusbegalc/axcarreplusbegalc.html"],
+        [`\\((ax+b)^2=c\\)`, "seconde/equations/degre2/axplusbcarreegalc/axplusbcarreegalc.html"],
+        [`\\(x^2=a\\)`, "seconde/equations/degre2/xcarreeegala/xcarreegala.html"]
         ]
     }, 'Factorisation': {
         "image": 5,
