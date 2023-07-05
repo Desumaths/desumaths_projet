@@ -23,10 +23,15 @@ export default  {
         [`\\((ax+b)^2=c\\)`, "seconde/equations/degre2/axplusbcarreegalc/axplusbcarreegalc.html"],
         [`\\(x^2=a\\)`, "seconde/equations/degre2/xcarreeegala/xcarreegala.html"]
         ]
-    }, 'Factorisation': {
+    }, 
+    'Factorisation': {
         "image": 5,
         "thèmes fiche": [["Factorisation", "pdf/seconde/factorisation/Factorisation.pdf"]],
-        "thèmes ligne": [["#", "#"]]
+        "thèmes ligne": [
+            ["Différence de carrés", "seconde/factorisation/differenceCarres/Differencedecarres.html"],
+            ["Facteur commun", "seconde/factorisation/facteurCommun/Facteurcommun.html"],
+            ["Identités remarquables", "seconde/factorisation/identitesRemarquables/Identitesremarquables.html"]        
+        ]
     },
     'Fonction': {
         "image": 6,
@@ -43,7 +48,10 @@ export default  {
         ["Tableaux de variations(équations|inéquations)", "pdf/seconde/fonctions/Tableaux_de_variations_equations_et_inequations.pdf"],
 
         ],
-        "thèmes ligne": [["Images et antécédents", "seconde/fonctions/antecedents_images/ImagesAntecedents.html"]]
+        "thèmes ligne": [
+            ["Images et antécédents", "seconde/fonctions/antecedents_images/ImagesAntecedents.html"],
+            ["Parité", "seconde/fonctions/parite/Parite.html"]
+        ]
     },
     'Inéquations': {
         'image': 7,
