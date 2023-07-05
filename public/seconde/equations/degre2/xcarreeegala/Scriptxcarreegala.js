@@ -1,62 +1,53 @@
 function nbrealéa(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min +1)) + min;
-  }
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
-function nbreouoppose(a) {
+function sol(a) {
     let rep;
-    let choix = nbrealéa(1,2);
-    if (choix==1) {rep=a;} else {rep=-a;}
+    if (a < 0) { rep = 0; }
+    if (a == 0) { rep = 2; }
+    if (a > 0) { rep = 1; }
     return rep;
 }
 
-function rienplus(a) {
-    let rep;
-    if (a<0) {rep='';} else {rep='+';}
-    return rep;
+function facteurs(a) {
+    let rep = [1];
+    let rep1;
+    let facts = [];
+    let facts1;
+    let listeCarrés = [4, 9, 16, 25, 36, 49, 64, 81];
+    for (let i = 2; i < a + 1; i++) {
+        if (a / i - Math.floor(a / i) == 0) { rep1 = rep.push(i); }
+    }
+    for (let j = 0; j < rep.length; j++) {
+        for (let k = 0; k < listeCarrés.length; k++) {
+            if (rep[j] == listeCarrés[k]) { facts1 = facts.push(rep[j]); }
+        }
+    }
+    return facts;
 }
 
-function rienmoins(a) {
-    let rep;
-    if (a<0) {rep='-';} else {rep='';}
-    return rep;
+
+function tombejuste(a) {
+    let carres = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
+    let b;
+    let c = 0;
+    if (a > 0) { b = Math.sqrt(a); }
+    if (a == 0) { return `$S=\\left\\\{0\\right\\\}$` }
+    if (a < 0) { return `$S=\\varnothing$` }
+    for (let i = 0; i < carres.length; i++) {
+        if (a == carres[i]) { c = 1; }
+    }
+    if (c == 0 & a > 0) { return `$S=\\left\\\{\\sqrt{${a}}~;~-\\sqrt{${a}}\\right\\\}$` }
+    if (c == 1 & a > 0) { return `$S=\\left\\\{-${b}~;~${b}\\right\\\}$` }
 }
 
-function plusmoins(a) {
-    let rep;
-    if (a<0) {rep='-';} else {rep='+';}
-    return rep;
-}
-
-function valabs(a) {
-    let rep;
-    if (a<0) {rep=-a;} else {rep=a;}
-    return rep;
-}
-
-function parenthesesgd(a) {
-    let rep;
-    let parg;
-    let pard;
-    if (a<0) {parg='(';pard=')';} else {parg='';pard='';}
-    return rep = [parg,pard];
-}
-
-function simplifierfraction(numerateur,denominateur){
-    var gcd = function gcd(a,b){
-      return b ? gcd(b, a%b) : a;
-    };
-    gcd = gcd(numerateur,denominateur);
-    return [numerateur/gcd, denominateur/gcd];
-  }
-
-
-
-function test_réponse(a,b,c) {
+function test_réponse(a, b, c) {
     let test;
-    let div=a/b;
-    if (div==c) {test='Bonne réponse !!';} else {test='Mauvaise réponse';}
+    let div = a / b;
+    if (div == c) { test = 'Bonne réponse !!'; } else { test = 'Mauvaise réponse'; }
     return test;
 }
 
@@ -68,38 +59,15 @@ let solutions = document.getElementById('solutions');
 let correction = document.getElementById('correction');
 let recommencer = document.getElementById('recommencer');
 
-let  a ,b ,xa ,ya ,xb ,yb ,pgdya ,pgdxa ,ybmya ,xbmxa ,sb ,axa ,opaxa ,sopaxa;
-
 function genererExercice() {
 
-     a = nbreouoppose(nbrealéa(2,10));
-     b = nbrealéa(-10,10);
-     xa = nbrealéa(-15,15);
-     ya = a*xa+b;
-     xb = xa+nbreouoppose(nbrealéa(1,10));
-     yb = a*xb+b;
-     pgdya = parenthesesgd(ya);
-     pgdxa = parenthesesgd(xa);
-     ybmya = yb-ya;
-     xbmxa = xb-xa;
-     sb = rienplus(b);
-     axa= a*xa;
-     opaxa= -axa;
-     sopaxa = rienplus(opaxa);
-    
-       
-    
-    enonce.innerHTML = `Déterminer l'équation réduite de la droite $d$ passant par les points $A(${xa}~;${ya})$ et $B(${xb}~;~${yb})$.`;
-    solution.innerHTML = `$y=${a}x${sb}${b}$`;
-    correctiond.innerHTML = `$\\underline{\\text{Coefficient directeur :}}~~a=\\dfrac{y_B-y_A}{x_B-x_A}$<br>
-    $a=\\dfrac{${yb}-${pgdya[0]}${ya}${pgdya[1]}}{${xb}-${pgdxa[0]}${xa}${pgdxa[1]}}=\\dfrac{${ybmya}}{${xbmxa}}=${a}$<br>
-    $\\underline{\\text{Ordonnée à l'origine :}}$<br>
-    $\\begin{array}{lrcrclr} A\\in d~\\text{donc} & y_A & = & ax_A+b & = & ${ya} & \\text{donc :} \\\\
-     & & & ${a}\\times ${pgdxa[0]} ${xa} ${pgdxa[1]} +b & = & ${ya} & \\text{donc :} \\\\
-     & & & ${axa} + b & = & ${ya} & \\text{donc :} \\\\
-     & & & b & = & ${ya} ${sopaxa} ${opaxa} & \\text{et donc :} \\\\
-     & & & b & = & ${b} &  \\end{array}$<br>
-     $\\underline{\\text{Équation réduite de}~d~:}~~y=${a}x${sb}${b}$`;
+    let a = nbrealéa(-10, 100);
+    let videoupas = sol(a);
+    let listeCorrections = [`$${a}$ est négatif donc il n'y a pas de solution`, `$${a}$ est positif ou nul donc $x=\\sqrt{${a}}$ ou $x=-\\sqrt{${a}}$`, `$${a}$ est nul donc il n'y a qu'une solution : $x=0$`];
+
+    enonce.innerHTML = `Résoudre dans $\\mathbb{R}$ l'équation : $x^2 = ${a}$`;
+    solution.innerHTML = tombejuste(a);
+    correctiond.innerHTML = listeCorrections[videoupas];
 }
 
 window.addEventListener('load', function () {
