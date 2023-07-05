@@ -88,9 +88,6 @@ export default {
     width: 15px;
 }
 
-
-
-
 @media screen and (max-width: 900px) {
     #carouselClass {
         width: 21.5em;

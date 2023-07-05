@@ -60,6 +60,18 @@ function fracsimp(num,denom) {
     return rep; 
 }
 
+function coefdiff(a) {
+    let rep = nbreouoppose(nbrealéa(1,10));
+    while (a==rep) {rep = nbreouoppose(nbrealéa(1,10));}
+    return rep;
+}
+
+function cas(denom) {
+    let k;
+    if (denom==1) {k=1;}
+    else {k=0;}
+    return k;
+}
 
 function test_réponse(a,b,c) {
     let test;
@@ -79,24 +91,42 @@ let recommencer = document.getElementById('recommencer');
 
 function genererExercice() {
 
-    let a = nbreouoppose(nbrealéa(2,10));
+    let a = nbreouoppose(nbrealéa(1,10));
     let b = nbreouoppose(nbrealéa(1,10));
+    let c = coefdiff(a);
+    let d = nbreouoppose(nbrealéa(1,10));
     let sb = rienplus(b);
-    let sol = nbrealéa(1,10);
-    let c = a*sol**2+b;
+    let sd = rienplus(d);
+    let oppc = -c;
+    let soppc = rienplus(oppc);
     let oppb = -b;
     let soppb = rienplus(oppb);
-    let droite = c-b;
-    let repcarre = sol**2; 
-     
+    let coeffx = a-c;
+    let coeffreels = d-b;
+    let rep = simplifierfraction(coeffreels,coeffx);
+    let repsimp = fracsimp(rep[0],rep[1]);
+    let srepsimple = rienmoins(coeffreels/coeffx);
+    let k = cas(rep[1]);
+    let rep2 = coeffreels/coeffx;
     
-    enonce.innerHTML = `Résoudre dans $\\mathbb{R}$ l'équation : $${a}x^2${sb}${b} = ${c}$`;
-    solution.innerHTML = `$S=\\left\\{-${sol}~;~${sol} \\right\\}$`
-    correctiond.innerHTML = `$\\begin{array}{rrcl} & ${a}x^2${sb}${b} & = & ${c} \\\\
-    \\iff & ${a}x^2 & = & ${c}${soppb}${oppb}=${droite} \\\\
-    \\iff & x^2 & = & \\dfrac{${droite}}{${a}}=${repcarre} \\\\
-    \\iff & x  =\\sqrt{${repcarre}} =  ${sol} & \\text{ou} & x=-\\sqrt{${repcarre}}=-${sol}
-    \\end{array}$`
+   
+    let listecorrections = [`$\\begin{array}{lrcl} & ${a}x${sb}${b} & = & ${c}x${sd}${d} \\\\
+    \\iff & ${a}x ${soppc}${oppc}x & = & ${d}${soppb}${oppb} \\\\
+    \\iff & ${coeffx}x & = & ${coeffreels} \\\\
+    \\iff & x & = & \\dfrac{${coeffreels}}{${coeffx}}=${srepsimple}\\dfrac{${repsimp[0]}}{${repsimp[1]}}~\\text{(simplifiée)}
+    \\end{array}$`,
+    `$\\begin{array}{lrcl} & ${a}x${sb}${b} & = & ${c}x${sd}${d} \\\\
+    \\iff & ${a}x ${soppc}${oppc}x & = & ${d}${soppb}${oppb} \\\\
+    \\iff & ${coeffx}x & = & ${coeffreels} \\\\
+    \\iff & x & = & \\dfrac{${coeffreels}}{${coeffx}}=${rep2}~\\text{(simplifiée)}
+    \\end{array}$`];
+    
+    let listesolutions = [`$S=\\left\\{ ${srepsimple}\\dfrac{${repsimp[0]}}{${repsimp[1]}} \\right\\}$`,
+    `$S=\\left\\{${rep2}\\right\\}$`];
+    
+    enonce.innerHTML = `Résoudre dans $\\mathbb{R}$ l'équation : $${a}x${sb}${b}=${c}x${sd}${d}$`;
+    solution.innerHTML = listesolutions[k];
+    correctiond.innerHTML = listecorrections[k];
 }
 
 window.addEventListener('load', function () {
