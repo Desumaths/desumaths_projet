@@ -33,9 +33,9 @@ export default {
         return {
             niveaux: {
                 'seconde': 'Seconde',
-                'premiere_spe': 'Première Spécifique',
+                'premiere_spe': 'Première Spécialité',
                 'premiere_techno': 'Première Technologique',
-                'terminale_spe': 'Terminale Spécifique',
+                'terminale_spe': 'Terminale Spécialité',
                 'terminale_techno': 'Terminale Technologique'
             },
             visible: 'seconde',
