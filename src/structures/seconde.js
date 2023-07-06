@@ -95,7 +95,10 @@ export default {
         ["Probabilités et arbres", "pdf/seconde/probabilites/Probabilites_et_arbres.pdf"],
         ["Probabilités et tableaux", "pdf/seconde/probabilites/Probabilites_et_tableaux.pdf"]
         ],
-        "thèmes ligne": [["#", "#"]]
+        "thèmes ligne": [
+            ["Tableaux", "seconde/probabilites/tableaux/ProbasTableau.html"],
+            ["Diagramme de Venn", "seconde/probabilites/venn/ProbasVenn.html"]
+        ]
     },
     'Statistiques': {
         "image": 12,
