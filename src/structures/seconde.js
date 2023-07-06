@@ -119,7 +119,7 @@ export default {
     'Statistiques': {
         "image": 12,
         "thèmes fiche": [["Statistiques", "pdf/seconde/statistiques/Statistiques.pdf"]],
-        "thèmes ligne": []
+        "thèmes ligne": ["#", "#"]
     },
     'Systèmes': {
         "image": 13,
