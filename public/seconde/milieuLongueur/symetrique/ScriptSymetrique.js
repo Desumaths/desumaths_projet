@@ -48,10 +48,6 @@ function genererExercice() {
     $${xA}+x_C=${xB}\\times 2=${xB2}$ et $${yA}+y_C=${yB}\\times 2=${yB2}$ et donc :<br>
     $x_C=${xB2} - ${pgd1[0]} ${xA} ${pgd1[1]} = \\boxed{${xC}=x_C} $ et $y_C=${yB2} - ${pgd2[0]} ${yA} ${pgd2[1]}= \\boxed{${yC}=y_C} $ `;
 
-
-    enonce.innerHTML = listeenonces[k];
-    solution.innerHTML = listesolutions[k];
-    correctiond.innerHTML = listecorrections[k];
 }
 
 window.addEventListener('load', function () {
