@@ -5,7 +5,7 @@ export default {
         "thèmes ligne": [["dérivées", "premiere_spe/derivation/usurv/usurv.html"]]
     },
     'Second Degré':{
-        "image": 1,
+        "image": 2,
         "thèmes fiche": [['#', '#']],
         "thèmes ligne": [
             ["Equations avec solutions entières", "premiere_spe/SecondDegre/Equations/TombeJuste/EqsDeg2TombeJuste.html"],
@@ -14,7 +14,7 @@ export default {
         ]
     },
     'Suites':{
-        "image": 1,
+        "image": 3,
         "thèmes fiche": [['#', '#']],
         "thèmes ligne": [
             ["Somme de termes d'une suite arithmétique", "premiere_spe/Suites/Arithmetiques/SommeDeTermes/SommeDeTermesSuiteAri.html"],
