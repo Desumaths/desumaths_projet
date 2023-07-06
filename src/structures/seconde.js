@@ -70,7 +70,14 @@ export default {
         ["Milieu et longueur(divers)", "pdf/seconde/milieuLongueur/Milieu_longueur.pdf"],
         ["Points alignés(longueurs)", "pdf/seconde/milieuLongueur/Points_alignes_avec_les_longueurs.pdf"],
         ],
-        "thèmes ligne": [["#", "#"]],
+        "thèmes ligne": [
+            ["Longueur", "seconde/milieuLongueur/longueur/longueur.html"],
+            ["Milieu", "seconde/milieuLongueur/milieu/Milieu.html"],
+            ["Points alignés", "seconde/milieuLongueur/pointsAlignes/PointsAlignes.html"],
+            ["Projeté orthogonal", "seconde/milieuLongueur/projeteOrthogonal/ProjeteOrthogonal.html"],
+            ["Quadrilatères", "seconde/milieuLongueur/quadrilateres/Quadrilateres.html"],
+            ["symétrique", "seconde/milieuLongueur/symetrique/Symetrique.html"],
+        ],
     },
     'Nombres et calculs': {
         'image': 9,
