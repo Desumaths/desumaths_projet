@@ -86,7 +86,16 @@ export default {
         "thèmes fiche": [["Pourcentages(fiche 1)", "pdf/seconde/pourcentages/Pourcentages_fiche_1.pdf"],
         ["Pourcentages(fiche 2)", "pdf/seconde/pourcentages/Pourcentages_fiche_2.pdf"]
         ],
-        "thèmes ligne": [["#", "#"]]
+        "thèmes ligne": [
+            ["Coefficient multiplicateur", "seconde/pourcentages/CM/CM.html"],
+            ["Evolution", "seconde/pourcentages/evolution/evolution.html"],
+            ["Evolution globale", "seconde/pourcentages/evolutionGlobale/Evolutionglobale.html"],
+            ["Evolution manquante", "seconde/pourcentages/evolutionManquante/EvolutionManquante.html"],
+            ["Evolution réciproque", "seconde/pourcentages/evolutionReciproque/EvolutionReciproque.html"],
+            ["Evolutions successives", "seconde/pourcentages/evolutionsSuccessives/EvolutionsSuccessives.html"],
+            ["Proportions échelonnées", "seconde/pourcentages/proportionsEchelonnees/ProportionsEchelonnees.html"],
+            ["Taux d'évolution", "seconde/pourcentages/tauxEvolution/TauxEvolution.html"]
+        ]
     },
     'Probabilités': {
         "image": 11,
@@ -103,7 +112,7 @@ export default {
     'Statistiques': {
         "image": 12,
         "thèmes fiche": [["Statistiques", "pdf/seconde/statistiques/Statistiques.pdf"]],
-        "thèmes ligne": [["#", "#"]]
+        "thèmes ligne": []
     },
     'Systèmes': {
         "image": 13,
