@@ -98,8 +98,6 @@ let correctiond = document.getElementById('correctiond');
 var correction = document.getElementById('correction');
 var solutions = document.getElementById('solutions');
 let solution = document.getElementById('solution');
-var test = document.getElementById('test');
-
 
 let listeCorrections = [`$\\begin{array}{rcl} ${a}x^2${sb}${b}x${sc}${c} & = & ${a}\\left( x^2${sbfrac}\\dfrac{${valabsb}}{${a}}x\\right)${sc}${c} \\\\
 & = & ${a}\\left( x^2${sfracbsura}${bsura[0]}x\\right)${sc}${c} \\hspace{5mm} (simplifiée) \\\\
@@ -127,8 +125,7 @@ let listeSolutions = [`$${a}\\left(x${sfracbsura}\\dfrac{${bsur2a[0]}}{${bsur2a[
 `$${a}\\left(x${sfracbsura}\\dfrac{${bsur2a[0]}}{${bsur2a[1]}}\\right)^2${sfin}\\dfrac{${finsimp[0]}}{${finsimp[1]}}$`,
 `$${a}\\left(x${sfracbsura}${bsur2a[0]}\\right)^2${sfin}${finsimp[0]}$`];
 
-enonce.innerHTML = `Déterminer la forme canonique de l'expression : $${a}x^2${sb}${b}x${sc}${c}$.<br>
-Essai : $\\begin{array}{rcl}  reponse & = & ${x412d58f} \\end{array}$`;
+enonce.innerHTML = `Déterminer la forme canonique de l'expression : $${a}x^2${sb}${b}x${sc}${c}$.`;
 solution.innerHTML = listeSolutions[k];
 correctiond.innerHTML = listeCorrections[k];
 
