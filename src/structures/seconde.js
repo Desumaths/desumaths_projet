@@ -86,7 +86,7 @@ export default {
         ["Puissances", "pdf/seconde/nombresCalculs/Puissances.pdf"],
         ["Racines", "pdf/seconde/nombresCalculs/Racines.pdf"],
         ],
-        "thèmes ligne": [["#", "#"]],
+        "thèmes ligne": [["Simplifier une racine", "seconde/NombresCalculs/simplificationRacine/Racines.html"]],
     },
     'Pourcentages': {
         'image': 10,
@@ -119,7 +119,7 @@ export default {
     'Statistiques': {
         "image": 12,
         "thèmes fiche": [["Statistiques", "pdf/seconde/statistiques/Statistiques.pdf"]],
-        "thèmes ligne": []
+        "thèmes ligne": ["#", "#"]
     },
     'Systèmes': {
         "image": 13,
