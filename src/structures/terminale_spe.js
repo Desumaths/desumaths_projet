@@ -12,14 +12,19 @@ export default {
             ['Révisions', "pdf/terminale_spe/espace/Revisionsespace.pdf"],
             ['Savoir faire', "pdf/terminale_spe/espace/Savoirfaireespace.pdf"]
         ],
-        "thèmes ligne": []
+        "thèmes ligne": [
+            ["Points coplanaires", "terminale_spe/Espace/PointsCoplanaires/PointsCoplanaires.html"],
+            ["Vecteurs coplanaires", "terminale_spe/Espace/VecteursCoplanaires/VecteursCoplanaires.html"],
+            ["Projeté orthogonal d'un point sur une droite", "terminale_spe/Espace/ProjeteOrthoPtDte/ProjeteOrthoPtDte.html"],
+            ["Projeté orthogonal d'un point sur un plan", "terminale_spe/Espace//ProjeteOrthoPtPlan/ProjetOrthoPtPlan.html"]
+        ]
     },
     "Intégration":{
         "image": 3,
         "thèmes fiche": [
             ["Intégration par partie", "pdf/terminale_spe/integrales/Integrationparparties.pdf"],
         ],
-        "thèmes ligne": []
+        "thèmes ligne": [["Intégrales (simples)", "terminale_spe/Integrales/IntegralesSimples/IntegralesSimples.html"]]
     },
     "Limites":{
         "image": 3,
@@ -28,7 +33,12 @@ export default {
             ["Comparaison", "pdf/terminale_spe/limites/Limites(comparaison).pdf"],
             ["Fonctions composées", "pdf/terminale_spe/limites/Limites(fonctionscomposees).pdf"]
         ],
-        "thèmes ligne": []
+        "thèmes ligne": [["Chagment de variable (exponentielle)", "terminale_spe/Limites/ChgtDeVariable/ChgtDeVariableExpo.html"],
+        ["Composition (exponentielle)", "terminale_spe/Limites/Composition/CompositionExpo.html"],
+        ["Fractions rationnelles : carré sur ax+b", "terminale_spe/Limites/FractionsRationnelles/CarreSurAxPlusB/CarreSurAxPlusB.html"],
+        ["Fractions rationnelles : carré sur ax+b (1 limite au hasard)", "terminale_spe/Limites/FractionsRationnelles/CarreSurAxPlusBAuHasard/CarreSurAxPlusBAuHasard.html"],
+        ["Fractions rationnelles : carré sur carré", "terminale_spe/Limites/FractionsRationnelles/CarreSurCarre/CarreSurCarre.html"],
+        ["Fractions rationnelles : carré sur carré (1 limite au hasard)", "terminale_spe/Limites/FractionsRationnelles/CarreSurCarreAuHasard/CarreSurCarreAuHasard.html"]]
     },
     "Logarithme":{
         "image": 4,
@@ -42,7 +52,9 @@ export default {
             ["Polynésie(juin 2021)", "pdf/terminale_spe/ln/ExercicelnPolynesiejuin2021.pdf"],
             ["Sujet 0(2021)", "pdf/terminale_spe/ln/Exercicelnsujet0_2021.pdf"],
         ],
-        "thèmes ligne": []
+        "thèmes ligne": [["Équations avec 1 ln", "terminale_spe/Ln/EquationsLn/EquationsLn.html"],
+        ["Équations avec 2 ln", "terminale_spe/Ln/Equations2Ln/Equations2Ln.html"],
+        ["Inéquations avec ln", "terminale_spe/Ln/InequationsLn/InequationsLn.html"]]
     },
     "Primitives":{
         "image": 5,
@@ -50,7 +62,7 @@ export default {
             ["Primitives 1", "pdf/terminale_spe/primitives/Primitives.pdf"],
             ["Primitives 2", "pdf/terminale_spe/primitives/Primitives(2).pdf"],
         ],
-        "thèmes ligne": []
+        "thèmes ligne": [["Primitives", "terminale_spe/Primitives/Primitives/Primitives.html"]]
     },
     "Probabilités":{
         "image": 6,
@@ -59,7 +71,7 @@ export default {
             ["Loi binomiale", "pdf/terminale_spe/probabilites/Loibinomiale.pdf"],
             ["Conditionnement", "pdf/terminale_spe/probabilites/Probabilites(conditionnement).pdf"],
         ],
-        "thèmes ligne": []
+        "thèmes ligne": [["Loi binomiale : calculs de probabilités", "terminale_spe/Probabilites/LoiBinomiale/LoiBinomiale.html"]]
     },
     "Suites":{
         "image": 7,
