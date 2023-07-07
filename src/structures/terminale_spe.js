@@ -52,7 +52,9 @@ export default {
             ["Polynésie(juin 2021)", "pdf/terminale_spe/ln/ExercicelnPolynesiejuin2021.pdf"],
             ["Sujet 0(2021)", "pdf/terminale_spe/ln/Exercicelnsujet0_2021.pdf"],
         ],
-        "thèmes ligne": []
+        "thèmes ligne": [["Équations avec 1 ln", "terminale_spe/Ln/EquationsLn/EquationsLn.html"],
+        ["Équations avec 2 ln", "terminale_spe/Ln/Equations2Ln/Equations2Ln.html"],
+        ["Inéquations avec ln", "terminale_spe/Ln/InequationsLn/InequationsLn.html"]]
     },
     "Primitives":{
         "image": 5,
