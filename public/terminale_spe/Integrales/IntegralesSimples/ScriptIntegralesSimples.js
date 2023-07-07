@@ -64,7 +64,14 @@ function test_réponse(e,f,g,h,i,j,k,l,m,n) {
 
 }
 
-let inf,sup,a,b,c,signea,signeb,sb,signec,fracx3,fracx2,fracx3simp,fracx2simp,pgdinf,pgdsup;
+let enonce = document.getElementById('enonce');
+let solution = document.getElementById('solution');
+let correctiond = document.getElementById('correctiond');
+var valider = document.getElementById('valider');
+var solutions = document.getElementById('solutions');
+var correction = document.getElementById('correction');
+var recommencer = document.getElementById('recommencer');
+
 
 function genererExercice() {
 
@@ -84,15 +91,6 @@ let fracx2simp = fracsimp(fracx2[0],fracx2[1]);
 let pgdinf = parenthesesgd(inf);
 let pgdsup = parenthesesgd(sup);
 
-let enonce = document.getElementById('enonce');
-let solution = document.getElementById('solution');
-let correctiond = document.getElementById('correctiond');
-var valider = document.getElementById('valider');
-var solutions = document.getElementById('solutions');
-var correction = document.getElementById('correction');
-var recommencer = document.getElementById('recommencer');
-var accueil = document.getElementById('accueil');
-var test = document.getElementById('test');
 
 enonce.innerHTML = `Calculer $I=\\displaystyle\\int_{${inf}}^{${sup}} \\left(${a}x^2${signeb}${b}x${signec}${c}\\right) {\\rm d}x$`;
 solution.innerHTML = `Solution : `;

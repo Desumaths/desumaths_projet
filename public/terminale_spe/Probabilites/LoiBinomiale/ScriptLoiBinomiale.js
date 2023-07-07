@@ -143,71 +143,68 @@ function reptesthyp(a,b,r) {
     return rep;
 }
 
-
-let n,k,kinf,kinfegal,ksup,ksupegal,p,pv,ppourcent,coefbin,repproba,repprobav,p1,nmk,p1v,bornes1,repegalegal,repegalegalarrondi,
-borneinfegalegal,bornes2,repinfegal,repeinfegalarrondi,bornes3,repegalinf,repegalinfarrondi,bornesupegalinf,borneinfegalinf,bornes4,
-repinfinf,repinfinfarrondi,bornesupinfinf,ab,retards,th,threp,rep3a,rep3av,kinf1,rep3b,rep3bv,ksupegal1,rep4a,rep4av,rep4b,rep4bv;
-
-function genererExercice() {
-
-let n = nbrealéa(10,70);
-let k = nbrealéa(1,n);
-let kinf = nbrealéa(1,n-1);
-let kinfegal =nbrealéa(1,n-1);
-let ksup = nbrealéa(1,n-1);
-let ksupegal = nbrealéa(1,n-1);
-let p = nbrealéa(30,70)/100;
-let pv = avecVirgule(p);
-let ppourcent = Math.round(p*100);
-let coefbin = (fact(n))/(fact(n-k)*fact(k));
-let repproba = coefbin*Math.pow(p,k)*Math.pow(1-p,n-k);
-let repprobav = avecVirgule(repproba);
-let p1 = 1-p;
-let nmk = n-k;
-let p1v = avecVirgule(Math.round(p1*100)/100);
-let bornes1 = borneinfsup(n);
-let repegalegal = probegalegal(bornes1[0],bornes1[1],n,p);
-let repegalegalarrondi = avecVirgule(Math.round(repegalegal*1000)/1000);
-let borneinfegalegal = bornes1[0]-1;
-let bornes2 = borneinfsup(n);
-let repinfegal = probinfegal(bornes2[0],bornes2[1],n,p);
-let repeinfegalarrondi = avecVirgule(Math.round(repinfegal*1000)/1000);
-let bornes3 = borneinfsup(n);
-let repegalinf = probegalinf(bornes3[0],bornes3[1],n,p);
-let repegalinfarrondi = avecVirgule(Math.round(repegalinf*1000)/1000);
-let bornesupegalinf = bornes3[1]-1;
-let borneinfegalinf = bornes3[0]-1;
-let bornes4 = borneinfsup(n);
-let repinfinf = probinfinf(bornes4[0],bornes4[1],n,p);
-let repinfinfarrondi = avecVirgule(Math.round(repinfinf*1000)/1000);
-let bornesupinfinf = bornes4[1]-1;
-let ab = binomflu(n,p);
-let retards = nbrealéa(1,n-1);
-let th = testhyp(ab[0],ab[1],retards);
-let threp = reptesthyp(ab[0],ab[1],retards);
-let rep3a = probegalegal(0,kinfegal,n,p);
-let rep3av = avecVirgule(Math.round(rep3a*1000)/1000);
-let kinf1 = kinf-1;
-let rep3b = probegalegal(0,kinf1,n,p);
-let rep3bv = avecVirgule(Math.round(rep3b*1000)/1000);
-let ksupegal1 = ksupegal-1;
-let rep4a = 1-probegalegal(0,ksupegal1,n,p);
-let rep4av = avecVirgule(Math.round(rep4a*1000)/1000);
-let rep4b = 1-probegalegal(0,ksup,n,p);
-let rep4bv = avecVirgule(Math.round(rep4b*1000)/1000);
-
-
 let enonce = document.getElementById('enonce');
 let correctiond = document.getElementById('correctiond');
 var correction = document.getElementById('correction');
 var solutions = document.getElementById('solutions');
 let solution = document.getElementById('solution');
-var test = document.getElementById('test');
+
+let n,k,kinf,kinfegal,ksup,ksupegal,p,pv,ppourcent,coefbin,repproba,repprobav,p1,nmk,p1v,
+bornes1,repegalegal,repegalegalarrondi,borneinfegalegal,bornes2,repinfegal,repeinfegalarrondi,
+bornes3,repegalinf,repegalinfarrondi,bornesupegalinf,borneinfegalin,bornes4,repinfinf,repinfinfarrondi,
+bornesupinfinf,ab,retards,ththrep,rep3a,kinf1,rep3b,rep3bv,ksupegal1,rep4a,rep4av,rep4b,rep4bv;
+
+function genererExercice() {
+
+ n = nbrealéa(10,70);
+ k = nbrealéa(1,n);
+ kinf = nbrealéa(1,n-1);
+ kinfegal =nbrealéa(1,n-1);
+ ksup = nbrealéa(1,n-1);
+ ksupegal = nbrealéa(1,n-1);
+ p = nbrealéa(30,70)/100;
+ pv = avecVirgule(p);
+ ppourcent = Math.round(p*100);
+ coefbin = (fact(n))/(fact(n-k)*fact(k));
+ repproba = coefbin*Math.pow(p,k)*Math.pow(1-p,n-k);
+ repprobav = avecVirgule(repproba);
+ p1 = 1-p;
+ nmk = n-k;
+ p1v = avecVirgule(Math.round(p1*100)/100);
+ bornes1 = borneinfsup(n);
+ repegalegal = probegalegal(bornes1[0],bornes1[1],n,p);
+ repegalegalarrondi = avecVirgule(Math.round(repegalegal*1000)/1000);
+ borneinfegalegal = bornes1[0]-1;
+ bornes2 = borneinfsup(n);
+ repinfegal = probinfegal(bornes2[0],bornes2[1],n,p);
+ repeinfegalarrondi = avecVirgule(Math.round(repinfegal*1000)/1000);
+ bornes3 = borneinfsup(n);
+ repegalinf = probegalinf(bornes3[0],bornes3[1],n,p);
+ repegalinfarrondi = avecVirgule(Math.round(repegalinf*1000)/1000);
+ bornesupegalinf = bornes3[1]-1;
+ borneinfegalinf = bornes3[0]-1;
+ bornes4 = borneinfsup(n);
+ repinfinf = probinfinf(bornes4[0],bornes4[1],n,p);
+ repinfinfarrondi = avecVirgule(Math.round(repinfinf*1000)/1000);
+ bornesupinfinf = bornes4[1]-1;
+ ab = binomflu(n,p);
+retards = nbrealéa(1,n-1);
+ th = testhyp(ab[0],ab[1],retards);
+ threp = reptesthyp(ab[0],ab[1],retards);
+ rep3a = probegalegal(0,kinfegal,n,p);
+ rep3av = avecVirgule(Math.round(rep3a*1000)/1000);
+ kinf1 = kinf-1;
+ rep3b = probegalegal(0,kinf1,n,p);
+ rep3bv = avecVirgule(Math.round(rep3b*1000)/1000);
+ ksupegal1 = ksupegal-1;
+ rep4a = 1-probegalegal(0,ksupegal1,n,p);
+ rep4av = avecVirgule(Math.round(rep4a*1000)/1000);
+ rep4b = 1-probegalegal(0,ksup,n,p);
+ rep4bv = avecVirgule(Math.round(rep4b*1000)/1000);
 
 
 
-
-enonce.innerHTML = `$\\textit{Cet exercice est une pure fiction.}$<br>$\\textit{Toute ressemblance avec des personnes existantes ne serait qu'un incroyable hasard...}$<br>
+enonce.innerHTML = `Cet exercice est une pure fiction.<br>Toute ressemblance avec des personnes existantes ne serait qu'un incroyable hasard...<br>
 Lors d'un trimestre on constate que Julien B. arrive en retard à ${ppourcent} % des cours.<br>
 On étudie ses éventuels retards en cours lors de ${n} cours consécutifs.<br>
 La variable aléatoire $X$ compte le nombre de fois où Julien B. arrive en retard en cours.<br>
