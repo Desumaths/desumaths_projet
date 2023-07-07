@@ -124,44 +124,44 @@ function sol7(c3sura3,a3,b3) {
   return rep;
 }
 
+let enonce = document.getElementById('enonce');
+let correctiond = document.getElementById('correctiond');
+let correction = document.getElementById('correction');
+let solutions = document.getElementById('solutions');
+let solution = document.getElementById('solution');
+
+
 let a,pgda,b,asurb,s1,c,sc,n,nplus1,bsuranplus1,s2,a3,pgda3,b3,sb3,c3,a3fois2,c3sura3,s3,c3sur2a3,s4,moinsc3sur2a3,moinsc3sura3,s6,s7,k;
 
 function genererExercice() {
 
-let a = nbreouoppose(nbrealéa(2,10));
-let pgda = parenthesegd(a);
-let b = diff(a);
-let asurb = fracsimpmax(a,b);
-let s1 = sol1(asurb,b);
-let c = nbreouoppose(nbrealéa(1,10));
-let sc = rienplus(c);
-let n = nbrealéa(2,10);
-let nplus1 = n+1;
-let bsuranplus1 = fracsimpmax(b,a*nplus1);
-let s2 = sol2(bsuranplus1,a,c,nplus1);
-let a3 = nbrealéa(2,10);
-let pgda3 = parenthesegd(a3);
-let b3 = nbrealéa(1,10);
-let sb3 = rienplus(b3);
-let c3 = nbreouoppose(nbrealéa(2,10));
-let a3fois2 = a3*2;
-let c3sura3 = fracsimpmax(c3,a3);
-let s3 = sol3(c3sura3,a3,b3);
-let c3sur2a3 = fracsimpmax(c3,a3fois2);
-let s4 = sol4(c3sur2a3,a3,b3);
-let moinsc3sur2a3 = fracsimpmax(-c3,a3fois2);
-let moinsc3sura3 = fracsimpmax(-c3,a3);
-let s6 = sol6(moinsc3sura3,a3,b3);
-let s7 = sol7(c3sura3,a3,b3);
-let k = nbrealéa(0,6);
+ a = nbreouoppose(nbrealéa(2,10));
+ pgda = parenthesegd(a);
+ b = diff(a);
+ asurb = fracsimpmax(a,b);
+ s1 = sol1(asurb,b);
+ c = nbreouoppose(nbrealéa(1,10));
+ sc = rienplus(c);
+ n = nbrealéa(2,10);
+ nplus1 = n+1;
+ bsuranplus1 = fracsimpmax(b,a*nplus1);
+ s2 = sol2(bsuranplus1,a,c,nplus1);
+ a3 = nbrealéa(2,10);
+ pgda3 = parenthesegd(a3);
+ b3 = nbrealéa(1,10);
+ sb3 = rienplus(b3);
+ c3 = nbreouoppose(nbrealéa(2,10));
+ a3fois2 = a3*2;
+ c3sura3 = fracsimpmax(c3,a3);
+ s3 = sol3(c3sura3,a3,b3);
+ c3sur2a3 = fracsimpmax(c3,a3fois2);
+ s4 = sol4(c3sur2a3,a3,b3);
+ moinsc3sur2a3 = fracsimpmax(-c3,a3fois2);
+ moinsc3sura3 = fracsimpmax(-c3,a3);
+ s6 = sol6(moinsc3sura3,a3,b3);
+ s7 = sol7(c3sura3,a3,b3);
+ k = nbrealéa(0,6);
 
-
-let enonce = document.getElementById('enonce');
-let correctiond = document.getElementById('correctiond');
-var correction = document.getElementById('correction');
-var solutions = document.getElementById('solutions');
-let solution = document.getElementById('solution');
-var test = document.getElementById('test');
 
 let listeenonces = [`Déterminer une primitive de la fonction $f$ définie sur $\\mathbb{R}$ par $f(x)=${a}~\\text{e}^{${b}x}$.`,
 `Déterminer une primitive de la fonction $f$ définie sur $\\mathbb{R}$ par $f(x)=${b}~(${a}x${sc}${c})^{${n}}$.`,
