@@ -71,7 +71,7 @@ export default {
             ["Loi binomiale", "pdf/terminale_spe/probabilites/Loibinomiale.pdf"],
             ["Conditionnement", "pdf/terminale_spe/probabilites/Probabilites(conditionnement).pdf"],
         ],
-        "thèmes ligne": [["Loi binomile : calculs de probabilités", "terminale_spe/Probabilites/LoiBinomiale/LoiBinomiale.html"]]
+        "thèmes ligne": [["Loi binomiale : calculs de probabilités", "terminale_spe/Probabilites/LoiBinomiale/LoiBinomiale.html"]]
     },
     "Suites":{
         "image": 7,
