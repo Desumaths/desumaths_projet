@@ -38,7 +38,7 @@ export default {
         ["Fractions rationnelles : carré sur ax+b", "terminale_spe/Limites/FractionsRationnelles/CarreSurAxPlusB/CarreSurAxPlusB.html"],
         ["Fractions rationnelles : carré sur ax+b (1 limite au hasard)", "terminale_spe/Limites/FractionsRationnelles/CarreSurAxPlusBAuHasard/CarreSurAxPlusBAuHasard.html"],
         ["Fractions rationnelles : carré sur carré", "terminale_spe/Limites/FractionsRationnelles/CarreSurCarre/CarreSurCarre.html"],
-        ["Fractions rationnelles : carré sur carré (1 limite au hasrad)", "terminale_spe/Limites/FractionsRationnelles/CarreSurCarreAuHasardCarreSurCarreAuHasard.html"]]
+        ["Fractions rationnelles : carré sur carré (1 limite au hasard)", "terminale_spe/Limites/FractionsRationnelles/CarreSurCarreAuHasard/CarreSurCarreAuHasard.html"]]
     },
     "Logarithme":{
         "image": 4,
