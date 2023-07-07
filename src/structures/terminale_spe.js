@@ -12,7 +12,12 @@ export default {
             ['Révisions', "pdf/terminale_spe/espace/Revisionsespace.pdf"],
             ['Savoir faire', "pdf/terminale_spe/espace/Savoirfaireespace.pdf"]
         ],
-        "thèmes ligne": []
+        "thèmes ligne": [
+            ["Points coplanaires", "terminale_spe/Espace/PointsCoplanaires/PointsCoplanaires.html"],
+            ["Vecteurs coplanaires", "terminale_spe/Espace/VecteursCoplanaires/VecteursCoplanaires.html"],
+            ["Projeté orthogonal d'un point sur une droite", "terminale_spe/Espace/ProjeteOrthoPtDte/ProjetOrthoPtDte.html"],
+            ["Projeté orthogonal d'un point sur un plan", "terminale_spe/Espace//ProjeteOrthoPtPlan/ProjetOrthoPtPlan.html"]
+        ]
     },
     "Intégration":{
         "image": 3,
