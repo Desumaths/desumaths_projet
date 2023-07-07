@@ -33,7 +33,12 @@ export default {
             ["Comparaison", "pdf/terminale_spe/limites/Limites(comparaison).pdf"],
             ["Fonctions composées", "pdf/terminale_spe/limites/Limites(fonctionscomposees).pdf"]
         ],
-        "thèmes ligne": []
+        "thèmes ligne": [["Chagment de variable (exponentielle)", "terminale_spe/Limites/ChgtDeVariable/ChgtDeVariableExpo.html"],
+        ["Composition (exponentielle)", "terminale_spe/Limites/Composition/CompositionExpo.html"],
+        ["Fractions rationnelles : carré sur ax+b", "terminale_spe/Limites/FractionsRationnelles/CarreSurAxPlusB/CarreSurAxPlusB.html"],
+        ["Fractions rationnelles : carré sur ax+b (1 limite au hasard)", "terminale_spe/Limites/FractionsRationnelles/CarreSurAxPlusBAuHasard/CarreSurAxPlusBAuHasard.html"],
+        ["Fractions rationnelles : carré sur carré", "terminale_spe/Limites/FractionsRationnelles/CarreSurCarre/CarreSurCarre.html"],
+        ["Fractions rationnelles : carré sur carré (1 limite au hasrad)", "terminale_spe/Limites/FractionsRationnelles/CarreSurCarreAuHasardCarreSurCarreAuHasard.html"]]
     },
     "Logarithme":{
         "image": 4,
