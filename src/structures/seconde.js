@@ -61,7 +61,7 @@ export default {
         ["Inéquations simples(intersections | réunions)", "pdf/seconde/inequations/Inequations_simples_intersections_reunions.pdf"],
         ["Systèmes d'inéquations", "pdf/seconde/inequations/Systemes_d_inequations.pdf"],
         ],
-        "thèmes ligne": [["#", "#"]]
+        "thèmes ligne": [["Inéquations simples", "seconde/inequations/simples/Inequations.html"]]
     },
     'Milieu et longueur': {
         'image': 8,
