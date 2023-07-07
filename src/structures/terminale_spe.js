@@ -62,7 +62,7 @@ export default {
             ["Primitives 1", "pdf/terminale_spe/primitives/Primitives.pdf"],
             ["Primitives 2", "pdf/terminale_spe/primitives/Primitives(2).pdf"],
         ],
-        "thèmes ligne": []
+        "thèmes ligne": [["Primitives", "terminale_spe/Primitives/Primitives/Primitives.html"]]
     },
     "Probabilités":{
         "image": 6,
@@ -71,7 +71,7 @@ export default {
             ["Loi binomiale", "pdf/terminale_spe/probabilites/Loibinomiale.pdf"],
             ["Conditionnement", "pdf/terminale_spe/probabilites/Probabilites(conditionnement).pdf"],
         ],
-        "thèmes ligne": []
+        "thèmes ligne": [["Loi binomile : calculs de probabilités", "terminale_spe/Probabilites/LoiBinomiale/ScriptLoiBinomiale.html"]]
     },
     "Suites":{
         "image": 7,
