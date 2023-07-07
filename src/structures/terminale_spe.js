@@ -24,7 +24,7 @@ export default {
         "thèmes fiche": [
             ["Intégration par partie", "pdf/terminale_spe/integrales/Integrationparparties.pdf"],
         ],
-        "thèmes ligne": []
+        "thèmes ligne": [["Intégrales (simples)", "terminale_spe/Integrales/IntegralesSimples/IntegralesSimples.html"]]
     },
     "Limites":{
         "image": 3,
