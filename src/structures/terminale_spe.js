@@ -15,7 +15,7 @@ export default {
         "thèmes ligne": [
             ["Points coplanaires", "terminale_spe/Espace/PointsCoplanaires/PointsCoplanaires.html"],
             ["Vecteurs coplanaires", "terminale_spe/Espace/VecteursCoplanaires/VecteursCoplanaires.html"],
-            ["Projeté orthogonal d'un point sur une droite", "terminale_spe/Espace/ProjeteOrthoPtDte/ProjetOrthoPtDte.html"],
+            ["Projeté orthogonal d'un point sur une droite", "terminale_spe/Espace/ProjeteOrthoPtDte/ProjeteOrthoPtDte.html"],
             ["Projeté orthogonal d'un point sur un plan", "terminale_spe/Espace//ProjeteOrthoPtPlan/ProjetOrthoPtPlan.html"]
         ]
     },
