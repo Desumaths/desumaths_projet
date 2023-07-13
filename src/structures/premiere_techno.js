@@ -15,7 +15,7 @@ export default {
     'Fonctions : généralités':{
         "image": 2,
         "thèmes fiche": [['#', '#']],
-        "thèmes ligne": [["SImages et antécédents", "premiere_techno/Fonctions/Images_antecedents/Images_Antecedents.html"]
+        "thèmes ligne": [["Images et antécédents", "premiere_techno/Fonctions/Images_antecedents/Images_Antecedents.html"]
     ]
     },
     'Probabilités conditionnelles':{
